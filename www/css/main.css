@@ -417,18 +417,106 @@ th {
   font-family: GothamPro-Light, Arial, sans-serif;
 }
 
-.gothamMedium {
-  font-family: GothamPro-Medium,Arial, sans-serif;
-}
-
-.gothamPro {
-  font-family: GothamPro, Arial, sans-serif;
-}
-
 /*colors*/
+.bg-white {
+  color: #f8f8f8 !important;
+}
+
 body {
+  font-size: 15px;
+  font-weight: 400;
   background-image: url(../img/background.png);
   -webkit-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+/*header*/
+#header #nav-content {
+  font-size: 16px;
+}
+
+#header #nav-content :hover {
+  text-decoration: underline !important;
+}
+
+#header .PersonalArea {
+  font-size: 15px;
+}
+
+#header .PersonalArea a {
+  background: url(../img/lk.png) 16px 11px no-repeat;
+  display: block;
+  width: 200px;
+  height: 42px;
+  line-height: 40px;
+  padding-left: 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+#header .btn-hover:hover {
+  opacity: 0.8;
+}
+
+/*top-content*/
+#top-content {
+  background: url(../img/fill.jpg);
+  background-position: center top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#top-content .delimiter {
+  padding: 5px 0.5px;
+  margin: 10px 0;
+}
+
+#top-content p {
+  line-height: 1.2em;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  margin-top: 44px;
+  font-size: 49px;
+  font-stretch: extra-condensed;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  #top-content p {
+    font-size: 35px;
+  }
+}
+
+#top-content a {
+  display: inline-block;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  width: 200px;
+  height: 50px;
+  line-height: 52px;
+  color: #ffffff;
+  background: #ffbf16;
+  font-size: 16.55px;
+  text-transform: none;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  margin-top: 35px;
+  text-decoration: none;
+}
+
+#top-content a:hover {
+  opacity: 0.8;
+}
+
+#top-content .phone {
+  font-size: 16px;
+}
+
+#top-content .block-bay {
+  margin-bottom: 117px;
 }

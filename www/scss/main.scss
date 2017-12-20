@@ -2,13 +2,10 @@
 
 // Colors
 //@import "components/color";
-
 // Variables;
 //@import "components/variables";
-
 // Reset
 @import "components/normalize";
-
 // components
 //@import "components/global";
 //@import "components/badges";
@@ -61,30 +58,28 @@ $md: 768px;
 $sm: 576px;
 $xs: 300px;
 
-
-
 /*fonts*/
 * {
   font-family: GothamPro-Light, Arial, sans-serif;
 }
 
-.gothamMedium {
-  font-family: GothamPro-Medium,Arial, sans-serif;
-}
+$gothamMedium: GothamPro-Medium, Arial, sans-serif;
 
-.gothamPro {
-  font-family: GothamPro, Arial, sans-serif;
-}
+$gotham: GothamPro, Arial, sans-serif;
 
 /*colors*/
+$main-color: #f8f8f8;
+$color-yellow: #fbbd33;
+$color-dark-gray: #3c3c3c;
+$color-light: #edf6fa;
 
-
-
-
-
-
+.bg-white {
+  color: $main-color !important;
+}
 
 body {
+  font-size: 15px;
+  font-weight: 400;
   background-image: url(../img/background.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -92,3 +87,79 @@ body {
   -o-background-size: cover;
 }
 
+/*header*/
+#header {
+
+  & #nav-content {
+    font-size: 16px;
+    & :hover {
+      text-decoration: underline !important;
+    }
+  }
+  & .PersonalArea {
+    font-size: 15px;
+    a {
+      background: url(../img/lk.png) 16px 11px no-repeat;
+      display: block;
+      width: 200px;
+      height: 42px;
+      line-height: 40px;
+      padding-left: 55px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 15px;
+      text-align: left;
+      border: 1px solid white;
+      text-decoration: none;
+    }
+  }
+  & .btn-hover:hover {
+    opacity: 0.8;
+  }
+}
+
+
+/*top-content*/
+#top-content {
+  background: url(../img/fill.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  & .delimiter {
+    padding: 5px 0.5px;
+    margin: 10px 0;
+  }
+  & p {
+    line-height: 1.2em;
+    font-family: $gothamMedium;
+    margin-top: 44px;
+    font-size: 49px;
+    font-stretch: extra-condensed;
+    @include break($xs,$md) { 
+      font-size: 35px;
+    }
+  }
+  & a {
+    display: inline-block;
+    border-radius: 6px;
+    width: 200px;
+    height: 50px;
+    line-height: 52px;
+    color: #ffffff;
+    background: #ffbf16;
+    font-size: 16.55px;
+    text-transform: none;
+    font-family: $gothamMedium;
+    margin-top: 35px;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  & .phone {
+    font-size: 16px;
+  }
+  & .block-bay {
+    margin-bottom: 117px;
+  }
+}
