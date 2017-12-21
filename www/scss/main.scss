@@ -78,13 +78,17 @@ $color-light: #edf6fa;
 }
 
 body {
-  font-size: 15px;
+  //font-size: 15px;
   font-weight: 400;
-  background-image: url(../img/background.png);
+  background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.container {
+  max-width: 1170px !important;
 }
 
 /*header*/
@@ -118,9 +122,9 @@ body {
   }
 }
 
-
 /*top-content*/
 #top-content {
+  //height: 470px;
   background: url(../img/fill.jpg);
   background-position: center top;
   background-size: cover;
@@ -135,7 +139,7 @@ body {
     margin-top: 44px;
     font-size: 49px;
     font-stretch: extra-condensed;
-    @include break($xs,$md) { 
+    @include break($xs, $md) {
       font-size: 35px;
     }
   }
