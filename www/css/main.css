@@ -411,15 +411,139 @@ th {
   src: url("../fonts/GothamPro-Light/GothamPro-Light.eot?") format("eot"), url("../fonts/GothamPro-Light/GothamPro-Light.otf") format("opentype"), url("../fonts/GothamPro-Light/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light/GothamPro-Light.svg#GothamPro-Light") format("svg");
 }
 
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 20%;
+  float: left;
+}
+
+.col-5-th {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5th {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .col-md-5th {
+    width: 33%;
+    float: none;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33%;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .col-md-5th.col-sm-5th {
+    width: 20%;
+    float: left;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .col-md-5th {
+    width: 100%;
+    float: none;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-5th.col-sm-5th {
+    width: 50%;
+    float: none;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .col-md-5th {
+    width: 100%;
+    float: none;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-md-5th.col-sm-5th {
+    width: 100%;
+    float: none;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 /*mixin*/
+#top-content a:hover, #tours .block-travel a :hover .hover, #tours .block-travel .block-tour > div:hover, #tours .block-travel .block-excursion > div:hover, #tours .block-travel .block-hotel > div:hover, #tours .block-form button:hover, #news .block-news .btn:hover {
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
 /*fonts*/
 * {
   font-family: GothamPro-Light, Arial, sans-serif;
 }
 
 /*colors*/
-.bg-white {
-  color: #f8f8f8 !important;
+.bg-main {
+  background-color: #f8f8f8 !important;
 }
 
 .text-dark-gray {
@@ -441,12 +565,24 @@ body {
   -o-background-size: cover;
 }
 
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .container {
-  max-width: 1175px !important;
+  max-width: 1173px !important;
 }
 
 #header #nav-content {
   font-size: 16px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  #header #nav-content {
+    padding-top: 20px;
+    font-size: 22px;
+  }
 }
 
 #header #nav-content :hover {
@@ -520,20 +656,17 @@ body {
           border-radius: 6px;
   width: 200px;
   height: 50px;
-  line-height: 52px;
+  line-height: 38px;
   color: #ffffff;
-  background: #ffbf16;
+  background: #fbbd33;
   font-size: 16.55px;
   text-transform: none;
   font-family: GothamPro-Medium, Arial, sans-serif;
-  margin-top: 35px;
+  margin-top: 45px;
   text-decoration: none;
 }
 
 #top-content a:hover {
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
   background: #deaa18;
 }
 
@@ -542,7 +675,7 @@ body {
 }
 
 #top-content .block-bay {
-  margin-bottom: 125px;
+  margin-bottom: 120px;
 }
 
 #top-content .block-phone {
@@ -552,11 +685,29 @@ body {
           justify-content: center;
 }
 
-#tours .text-dark-gray {
+@media (min-width: 300px) and (max-width: 768px) {
+  #top-content .block-phone {
+    font-size: 13px;
+  }
+  #top-content .block-phone .phone {
+    font-size: 14px;
+  }
+}
+
+#tours .col-12 .spec {
   font-size: 24px;
+  color: #3c3c3c;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  #tours .col-12 .spec {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 #tours .block-travel span {
+  font-family: GothamPro, Arial, sans-serif;
   position: relative;
   z-index: 4;
 }
@@ -566,9 +717,6 @@ body {
 }
 
 #tours .block-travel a :hover .hover {
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
   opacity: 0.5;
 }
 
@@ -599,30 +747,33 @@ body {
 }
 
 #tours .block-travel .block-tour > div:hover, #tours .block-travel .block-excursion > div:hover, #tours .block-travel .block-hotel > div:hover {
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
   opacity: 0.5;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  #tours .block-travel .block-tour, #tours .block-travel .block-excursion, #tours .block-travel .block-hotel {
+    font-size: 28px;
+  }
+}
+
 #tours .block-travel .block-tour {
-  background: url(../img/img3.jpg);
+  background: url(../img/img3.jpg) right;
 }
 
 #tours .block-travel .block-excursion {
-  background: url(../img/img2.jpg);
+  background: url(../img/img2.jpg) right;
 }
 
 #tours .block-travel .block-hotel {
-  background: url(../img/img1.jpg);
+  background: url(../img/img1.jpg) right;
 }
 
 #tours .block-carousel .carousel-control-prev span {
   position: absolute;
   top: 50%;
   margin-top: -30px;
-  height: 59px;
-  width: 56px;
+  height: 70px;
+  width: 45px;
   background: url(../img/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
   z-index: 23;
   left: 0;
@@ -633,8 +784,8 @@ body {
   position: absolute;
   top: 50%;
   margin-top: -30px;
-  height: 59px;
-  width: 56px;
+  height: 70px;
+  width: 45px;
   background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
   right: 0;
 }
@@ -660,10 +811,16 @@ body {
   padding: 5px 20px;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  #tours .btm-title {
+    font-size: 11px;
+  }
+}
+
 #tours .price {
   height: 60px;
   width: 150px;
-  background: #fac338;
+  background: #fbbd33;
   right: 0;
   bottom: 0;
   position: absolute;
@@ -673,7 +830,178 @@ body {
   font-size: 15px;
 }
 
+@media (min-width: 300px) and (max-width: 768px) {
+  #tours .price {
+    height: 50px;
+    width: 110px;
+  }
+}
+
 #tours .price span {
   font-size: 20px;
   font-family: GothamPro-Medium, Arial, sans-serif;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  #tours .price span {
+    font-size: 13px;
+  }
+}
+
+#tours .block-form {
+  color: #fff;
+}
+
+#tours .block-form img {
+  position: absolute;
+  z-index: 0;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+  #tours .block-form img {
+    max-width: 88%;
+    height: 110%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #tours .block-form img {
+    max-width: 93%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #tours .block-form img {
+    max-width: 96%;
+  }
+}
+
+#tours .block-form h6 {
+  padding-top: 33px;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  font-size: 29px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #tours .block-form h6 {
+    font-size: 20px;
+  }
+}
+
+#tours .block-form p {
+  font-family: GothamPro, Arial, sans-serif;
+  font-size: 14px;
+  padding-top: 52px;
+  padding-bottom: 15px;
+}
+
+#tours .block-form .form-group {
+  padding-top: 33px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #tours .block-form .form-group {
+    padding-top: 0px;
+  }
+}
+
+#tours .block-form button {
+  background: #fbbd33;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  font-size: 15px;
+}
+
+#tours .block-form button:hover {
+  background: #d5a218;
+}
+
+#tours .block-form input, #tours .block-form button {
+  width: 300px;
+  height: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #tours .block-form input, #tours .block-form button {
+    width: 247px;
+    height: 50px;
+    font-size: 13px;
+  }
+}
+
+#news .title-news h6 {
+  font-size: 29px;
+  color: #3c3c3c;
+}
+
+#news .block-news {
+  margin-bottom: 45px;
+}
+
+@media (min-width: 992px) {
+  #news .block-news .row:first-child {
+    padding-left: 35px !important;
+    padding-right: 15px !important;
+  }
+  #news .block-news .row:last-child {
+    padding-left: 15px !important;
+    padding-right: 25px !important;
+  }
+}
+
+#news .block-news img {
+  padding-bottom: 20px;
+}
+
+#news .block-news h6 {
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  color: #3c3c3c;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+#news .block-news p {
+  color: #3c3c3c;
+  font-size: 13px;
+}
+
+#news .block-news .btn {
+  margin: 5px 0;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  width: 240px;
+  height: 40px;
+  line-height: 25px;
+  color: #fff;
+  background: #fbbd33;
+  font-size: 14.40px;
+  text-transform: none;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  text-decoration: none;
+}
+
+#news .block-news .btn:hover {
+  background: #deaa18;
+}
+
+#medals {
+  background-color: #edf6fa;
+}
+
+#medals .title-medals h6 {
+  font-size: 28px;
+  color: #3c3c3c;
+}
+
+#medals .col-lg-3 p {
+  font-size: 16px;
+}
+
+#ad .row {
+  padding-bottom: 65px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #ad .row img {
+    padding-bottom: 20px;
+  }
 }

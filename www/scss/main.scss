@@ -1,43 +1,8 @@
 @charset "UTF-8";
-
-// Colors
-//@import "components/color";
-// Variables;
-//@import "components/variables";
-// Reset
 @import "components/normalize";
 // components
-//@import "components/global";
-//@import "components/badges";
-//@import "components/icons-material-design";
-//@import "components/grid";
-//@import "components/navbar";
-//@import "components/roboto";
-//@import "components/typography";
-//@import "components/transitions";
-//@import "components/cards";
-//@import "components/toast";
-//@import "components/tabs";
-//@import "components/tooltip";
-//@import "components/buttons";
-//@import "components/dropdown";
-//@import "components/waves";
-//@import "components/modal";
-//@import "components/collapsible";
-//@import "components/chips";
-//@import "components/materialbox";
-//@import "components/forms/forms";
-//@import "components/table_of_contents";
-//@import "components/sideNav";
-//@import "components/preloader";
-//@import "components/slider";
-//@import "components/carousel";
-//@import "components/tapTarget";
-//@import "components/pulse";
-//@import "components/date_picker/default";
-//@import "components/date_picker/default.date";
-//@import "components/date_picker/default.time";
 @import "fonts";
+@import "col-5th";
 
 /*mixin*/
 @mixin break($args...) {
@@ -58,6 +23,15 @@ $md: 768px;
 $sm: 576px;
 $xs: 300px;
 
+//template
+%for-hover {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
 /*fonts*/
 * {
   font-family: GothamPro-Light, Arial, sans-serif;
@@ -73,16 +47,15 @@ $color-yellow: #fbbd33;
 $color-dark-gray: #3c3c3c;
 $color-light: #edf6fa;
 
-
-.bg-white {
-  color: $main-color !important;
+.bg-main {
+  background-color: $main-color !important;
 }
 
 .text-dark-gray {
   color: $color-dark-gray;
 }
 
-// Classes
+// classes
 .z-0 {
   z-index: 0;
 }
@@ -91,26 +64,32 @@ $color-light: #edf6fa;
   z-index: 1000;
 }
 
-
-
 ///
 body {
   background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+  -moz-background-size: cover; 
   background-size: cover;
   -o-background-size: cover;
 }
 
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .container {
-  max-width: 1175px !important;
+  max-width: 1173px !important;
 }
 
 //header
 #header {
-
   & #nav-content {
     font-size: 16px;
+    @include break($xs, $md) {
+      padding-top: 20px;
+      font-size: 22px;
+    }
     & :hover {
       text-decoration: underline !important;
     }
@@ -168,41 +147,54 @@ body {
     border-radius: 6px;
     width: 200px;
     height: 50px;
-    line-height: 52px;
+    line-height: 38px;
     color: #ffffff;
-    background: #ffbf16;
+    background: $color-yellow;
     font-size: 16.55px;
     text-transform: none;
     font-family: $gothamMedium;
-    margin-top: 35px;
+    margin-top: 45px;
+
     text-decoration: none;
     &:hover {
-      -webkit-transition:  all ease 0.5s;
-      -moz-transition:  all ease 0.5s;
-      -ms-transition: all ease  0.5s;
-      -o-transition: all ease 0.5s;
-      transition:  all ease 0.5s;
+      @extend %for-hover;
       background: #deaa18;
     }
+
   }
   & .phone {
     font-size: 16px;
   }
   & .block-bay {
-    margin-bottom: 125px;
+    margin-bottom: 120px;
   }
   & .block-phone {
     justify-content: center;
+    @include break($xs, $md) {
+      font-size: 13px;
+     & .phone {
+       font-size: 14px;
+     }
+    }
   }
 }
 
 //Tours
 #tours {
-  & .text-dark-gray {
-    font-size: 24px;
+  & .col-12 {
+    & .spec {
+      font-size: 24px;
+      color: $color-dark-gray;
+      @include break($xs, $md) {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
   }
+
   & .block-travel {
     & span {
+      font-family: $gotham;
       position: relative;
       z-index: 4;
     }
@@ -210,17 +202,13 @@ body {
       text-decoration: none;
       & :hover {
         & .hover {
-          -webkit-transition:  all ease 0.5s;
-          -moz-transition:  all ease 0.5s;
-          -ms-transition: all ease  0.5s;
-          -o-transition: all ease 0.5s;
-          transition:  all ease 0.5s;
+          @extend %for-hover;
           opacity: 0.5;
         }
       }
     }
     & .block-tour, .block-excursion, .block-hotel {
-      &>div{
+      & > div {
         height: 100%;
         width: 100%;
         position: absolute;
@@ -230,17 +218,16 @@ body {
         border-radius: 5px;
         top: 0;
         &:hover {
-          -webkit-transition:  all ease 0.5s;
-          -moz-transition:  all ease 0.5s;
-          -ms-transition: all ease  0.5s;
-          -o-transition: all ease 0.5s;
-          transition:  all ease 0.5s;
+          @extend %for-hover;
           opacity: 0.5;
         }
       }
       height: 80px;
       line-height: 80px;
       font-size: 38px;
+      @include break($xs, $md) {
+        font-size: 28px;
+      }
       font-weight: normal;
       color: #ffffff;
       text-align: left;
@@ -250,13 +237,13 @@ body {
       position: relative;
     }
     & .block-tour {
-      background: url(../img/img3.jpg);
+      background: url(../img/img3.jpg) right;
     }
     & .block-excursion {
-      background: url(../img/img2.jpg);
+      background: url(../img/img2.jpg) right;
     }
     & .block-hotel {
-      background: url(../img/img1.jpg);
+      background: url(../img/img1.jpg) right;
     }
   }
   & .block-carousel {
@@ -265,8 +252,8 @@ body {
         position: absolute;
         top: 50%;
         margin-top: -30px;
-        height: 59px;
-        width: 56px;
+        height: 70px;
+        width: 45px;
         background: url(../img/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
         z-index: 23;
         left: 0;
@@ -278,8 +265,8 @@ body {
         position: absolute;
         top: 50%;
         margin-top: -30px;
-        height: 59px;
-        width: 56px;
+        height: 70px;
+        width: 45px;
         background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
         right: 0;
 
@@ -302,15 +289,24 @@ body {
     color: #ffffff;
     text-align: left;
     position: absolute;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     bottom: 0;
     left: 0;
     padding: 5px 20px;
+    @include break($xs, $md) {
+
+      font-size: 11px;
+    }
   }
   & .price {
+    @include break($xs, $md) {
+      height: 50px;
+      width: 110px;
+
+    }
     height: 60px;
     width: 150px;
-    background: #fac338;
+    background: $color-yellow;
     right: 0;
     bottom: 0;
     position: absolute;
@@ -319,8 +315,150 @@ body {
     color: #ffffff;
     font-size: 15px;
     & span {
+      @include break($xs, $md) {
+        font-size: 13px;
+      }
       font-size: 20px;
       font-family: $gothamMedium;
+    }
+  }
+  & .block-form {
+    color: #fff;
+    //background: url(../img/form_bg.png) center center no-repeat;
+    & img {
+      position: absolute;
+      z-index: 0;
+      @include break($xs, $xl) {
+        max-width: 88%;
+        height: 110%;
+      }
+      @include break($sm, $lg) {
+        max-width: 93%;
+      }
+      @include break($md, $xl) {
+        max-width: 96%;
+      }
+    }
+    & h6 {
+      padding-top: 33px;
+      font-family: $gothamMedium;
+      font-size: 29px;
+      @include break($xs, $lg) {
+        font-size: 20px;
+      }
+    }
+    & p {
+      font-family: $gotham;
+      font-size: 14px;
+      padding-top: 52px;
+      padding-bottom: 15px;
+    }
+    & .form-group {
+      @include break($xs, $lg) {
+        padding-top: 0px;
+      }
+      padding-top: 33px;
+    }
+    & button {
+      background: $color-yellow;
+      font-family: $gothamMedium;
+      font-size: 15px;
+      &:hover {
+        @extend %for-hover;
+        background: #d5a218;
+      }
+    }
+    & input, button {
+      width: 300px;
+      height: 50px;
+      @include break($xs, $lg) {
+        width: 247px;
+        height: 50px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+//news
+#news {
+  & .title-news {
+    & h6 {
+
+      font-size: 29px;
+      color: $color-dark-gray;
+    }
+  }
+  & .block-news {
+    @include break($lg) {
+      & .row {
+        &:first-child {
+          padding-left: 35px !important;
+          padding-right: 15px !important;
+        }
+        &:last-child {
+          padding-left: 15px !important;
+          padding-right: 25px !important;
+        }
+      }
+    }
+    margin-bottom: 45px;
+    & img {
+      padding-bottom: 20px;
+    }
+    & h6 {
+      font-family: $gothamMedium;
+      color: $color-dark-gray;
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+    & p {
+      color: $color-dark-gray;
+      font-size: 13px;
+    }
+    & .btn {
+      margin: 5px 0;
+      border-radius: 6px;
+      width: 240px;
+      height: 40px;
+      line-height: 25px;
+      color: #fff;
+      background: $color-yellow;
+      font-size: 14.40px;
+      text-transform: none;
+      font-family: $gothamMedium;
+      text-decoration: none;
+      &:hover {
+        @extend %for-hover;
+        background: #deaa18;
+      }
+    }
+  }
+}
+
+#medals {
+  background-color: $color-light;
+  & .title-medals {
+    & h6 {
+      font-size: 28px;
+      color: $color-dark-gray;
+    }
+  }
+  & .col-lg-3 {
+    & p {
+      font-size: 16px;
+    }
+  }
+}
+
+#ad {
+  & .row {
+    padding-bottom: 65px;
+    & img {
+      @include break($xs, $lg) {
+        padding-bottom: 20px;
+      }
     }
   }
 }
