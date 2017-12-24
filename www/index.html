@@ -8,6 +8,8 @@
 
     <!--Libs-->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="libs/BootstrapFormHelpers/css/bootstrap-formhelpers.css">-->
 
     <!--css-->
     <link rel="stylesheet" href="css/main.min.css">
@@ -345,24 +347,141 @@
 </div>
 
 <!--footer-->
-<div id="footer">
+
+
+<div id="footer" class="pt-5 text-white">
     <div class="container ">
-        <div class="row">
-            <div class="col-lg-3 logo container"></div>
-            <div class="col-lg-2 company"></div>
-            <div class="col-lg-2 agents"></div>
-            <div class="col-lg-3 china"></div>
-            <div class="col-lg-2 phone"></div>
+        <div class="row pb-5">
+
+            <div class="col-lg-3 logo pr-lg-2">
+                <div class="pr-lg-4">
+                    <div class="footer-logo pb-4">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <hr class="bg-white">
+                    <div class=" social d-inline-flex pb-4">
+                        <span> Следуйте <br> за нами:</span>
+                        <a href="#" class="mx-2 ml-5">
+                            <img src="img/fb.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="mx-2">
+                            <img src="img/vk.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="#" class="mx-2">
+                            <img src="img/in.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="block-info ">
+                    <div class="d-inline-flex">
+                        <!--<img src="img/dol.png" alt="" class="img-fluid">-->
+                        <span class="text-uppercase mr-3 fa fa-usd"> usd 59.44</span>
+                        <!--<img src="img/u.png" alt="" class="img-fluid ">-->
+                        <span class="text-uppercase mr-4 fa fa-jpy"> cny 9.44</span>
+                        <a href="" class="text-white">Архив валют</a>
+                    </div>
+                    <hr class="bg-white my-1">
+                    <span class="mr-5 fa fa-cloud"> <span class="mx-1">Хайкоу</span> +27&#176;С</span>
+                    <span class="fa fa-cloud"> <span class="mx-1">Санья</span>+28&#176;С</span>
+                </div>
+            </div>
+            <div class="col-lg-2 company ">
+                <h6 class=" ">О компании</h6>
+                <ul class="navbar-nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Финансовые гарантии</a></li>
+                    <li><a href="#">СМИ о нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-2 agents">
+
+                <h6 class="4">Aгентствам</h6>
+                <ul class="navbar-nav">
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="#">Оплата туров</a></li>
+                    <li><a href="#">Страхование</a></li>
+                    <li><a href="#">Рекламные туры</a></li>
+                    <li><a href="#">Выдача документов</a></li>
+                    <li><a href="#">Памятки по курортам</a></li>
+                    <li><a href="#">Архив курсов валют</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3 china">
+                <h6 class="">китай</h6>
+                <ul class="navbar-nav">
+                    <li><a href="#">Правила въезда на о.Хайнань</a></li>
+                    <li><a href="#">Авиабилеты</a></li>
+                    <li><a href="#">Трансфер</a></li>
+                    <li><a href="#">Медицинские центры</a></li>
+                    <li><a href="#">Отели</a></li>
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Памятка для туристов</a></li>
+                    <li><a href="#">Правила предоставления доп. кровати</a></li>
+                    <li><a href="#">Система FORTUNA - Китай</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-2 phone px-0">
+                <div class="">
+                    Номер для агентств: <span>8 (800) 777-70-27</span>
+                </div>
+                <div class="footer_phone">
+                    Номер для туристов: <span>+7 (495) 133-90-83</span>
+                </div>
+                <a href="#" class="btn " data-toggle="modal" data-target="#phoneModal">Обратный звонок</a>
+
+                <!-- The modal -->
+                <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-uppercase">
+                                <h4 class="modal-title" id="modalLabel"> Обратный звонок</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class=" text-dark">
+                                    <input type="text" name="phone-number" id="phone-number"
+                                           class="form-control w-50 mx-auto bfh-phone"
+                                           data-format="+7 (ddd) ddd-dddd">
+                                </form>
+                                <button type="button" class="btn " data-dismiss="modal">Подписаться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <hr class="hr-btm">
+                <div class="row text-center">
+                    <div class="col-lg-12  footer-btm pt-5 pt-lg-0">
+                        <div class="d-block">
+                            2017 &#169; Жемчужная Река
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 
 
 <!-- Popper -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="libs/jquery.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-formhelpers-phone.js"></script>
 
 
 </body>

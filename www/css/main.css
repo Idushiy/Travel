@@ -530,7 +530,7 @@ th {
 }
 
 /*mixin*/
-#top-content a:hover, #tours .block-travel a :hover .hover, #tours .block-travel .block-tour > div:hover, #tours .block-travel .block-excursion > div:hover, #tours .block-travel .block-hotel > div:hover, #tours .block-form button:hover, #news .block-news .btn:hover {
+#top-content a:hover, #tours .block-travel a :hover .hover, #tours .block-travel .block-tour > div:hover, #tours .block-travel .block-excursion > div:hover, #tours .block-travel .block-hotel > div:hover, #tours .block-form button:hover, #news .block-news .btn:hover, #footer .phone a:hover {
   -webkit-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1003,5 +1003,150 @@ body {
 @media (min-width: 300px) and (max-width: 992px) {
   #ad .row img {
     padding-bottom: 20px;
+  }
+}
+
+#footer .social {
+  margin-bottom: 60px;
+}
+
+#footer .social span {
+  line-height: 15px;
+  font-size: 12px;
+}
+
+#footer .block-info {
+  font-size: 13px;
+}
+
+#footer .company, #footer .agents, #footer .china {
+  color: #fff;
+}
+
+#footer .company h6, #footer .agents h6, #footer .china h6 {
+  text-transform: uppercase;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #footer .company h6, #footer .agents h6, #footer .china h6 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+#footer .company li, #footer .agents li, #footer .china li {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #footer .company li, #footer .agents li, #footer .china li {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+}
+
+#footer .company li a, #footer .agents li a, #footer .china li a {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #footer .phone {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+#footer .phone span {
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  #footer .phone span {
+    margin-left: 1px;
+  }
+}
+
+#footer .phone a {
+  display: inline-block;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  width: 170px;
+  height: 50px;
+  line-height: 38px;
+  color: #ffffff;
+  background: #fbbd33;
+  font-size: 12.55px;
+  text-transform: none;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+#footer .phone a:hover {
+  background: #deaa18;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #footer .phone {
+    margin-left: -11px;
+  }
+}
+
+#footer .phone .modal .modal-header h4 {
+  margin: 0 auto;
+  color: #3c3c3c;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+}
+
+#footer .phone .modal .modal-header button {
+  position: absolute;
+  right: 16px;
+}
+
+#footer .phone .modal .modal-body {
+  text-align: center;
+  display: block;
+}
+
+#footer .phone .modal .modal-body button {
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  width: 235px;
+  height: 40px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #fbbd33;
+  font-size: 12.55px;
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  margin: 15px 0;
+}
+
+#footer .hr-btm {
+  margin-top: 50px;
+  height: 1px;
+  background: #638db7;
+}
+
+#footer .footer-btm {
+  font-family: GothamPro-Medium, Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 120px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  #footer .navbar-nav {
+    text-align: center;
   }
 }

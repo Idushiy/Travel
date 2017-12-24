@@ -68,7 +68,7 @@ $color-light: #edf6fa;
 body {
   background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
-  -moz-background-size: cover; 
+  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
@@ -172,9 +172,9 @@ body {
     justify-content: center;
     @include break($xs, $md) {
       font-size: 13px;
-     & .phone {
-       font-size: 14px;
-     }
+      & .phone {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -380,7 +380,6 @@ body {
   }
 }
 
-
 //news
 #news {
   & .title-news {
@@ -461,4 +460,126 @@ body {
       }
     }
   }
+}
+
+#footer {
+  & .social {
+    margin-bottom: 60px;
+    & span {
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+  & .block-info {
+    font-size: 13px;
+  }
+  & .company, .agents, .china {
+    color: #fff;
+    & h6 {
+
+      text-transform: uppercase;
+      font-family: $gothamMedium;
+      font-size: 14px;
+      padding-bottom: 15px;
+      @include break($xs, $lg) {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+      }
+    }
+    & li {
+      font-size: 13px;
+      margin-bottom: 5px;
+      @include break($xs, $lg) {
+        font-size: 19px;
+        margin-bottom: 15px;
+      }
+      & a {
+        text-transform: capitalize;
+        color: #fff;
+      }
+    }
+  }
+  & .phone {
+    @include break($xs, $lg) {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 10px;
+    }
+    & span {
+      font-family: $gothamMedium;
+      display: inline-flex;
+      padding-bottom: 15px;
+      @include break($xs, $sm) {
+        margin-left: 1px;
+      }
+
+    }
+    & a {
+      display: inline-block;
+      border-radius: 6px;
+      width: 170px;
+      height: 50px;
+      line-height: 38px;
+      color: #ffffff;
+      background: $color-yellow;
+      font-size: 12.55px;
+      text-transform: none;
+      font-family: $gothamMedium;
+      margin-top: 25px;
+      text-decoration: none;
+      &:hover {
+        @extend %for-hover;
+        background: #deaa18;
+      }
+    }
+    @include break($lg, $xl) {
+      margin-left: -11px;
+    }
+
+    & .modal {
+      & .modal-header {
+        & h4 {
+          margin: 0 auto;
+          color: $color-dark-gray;
+          font-family: $gothamMedium;
+        }
+        & button {
+          position: absolute;
+          right: 16px;
+        }
+      }
+      & .modal-body {
+        text-align: center;
+        display: block;
+        & button {
+          border-radius: 4px;
+          width: 235px;
+          height: 40px;
+          line-height: 28px;
+          color: #ffffff;
+          background: $color-yellow;
+          font-size: 12.55px;
+          font-family: $gothamMedium;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+  & .hr-btm {
+   margin-top: 50px;
+    height: 1px;
+    background: #638db7;
+  }
+  & .footer-btm {
+    font-family: $gothamMedium;
+    font-size: 12px;
+    margin-bottom: 120px;
+  }
+  @include break($xs, $lg) {
+    & .navbar-nav {
+      text-align: center;
+    }
+  }
+
 }
