@@ -585,7 +585,7 @@ body {
   }
 }
 
-#header #nav-content :hover {
+#header #nav-content li :hover {
   text-decoration: underline !important;
 }
 
@@ -1017,6 +1017,10 @@ body {
 
 #footer .block-info {
   font-size: 13px;
+}
+
+#footer .block-info .fa-usd::before, #footer .block-info .fa-jpy::before {
+  font-size: 16px;
 }
 
 #footer .company, #footer .agents, #footer .china {

@@ -90,8 +90,10 @@ body {
       padding-top: 20px;
       font-size: 22px;
     }
-    & :hover {
-      text-decoration: underline !important;
+    & li {
+      & :hover {
+         text-decoration: underline !important;
+      }
     }
   }
   & .room {
@@ -472,6 +474,9 @@ body {
   }
   & .block-info {
     font-size: 13px;
+    & .fa-usd::before, .fa-jpy::before {
+      font-size: 16px;
+    }
   }
   & .company, .agents, .china {
     color: #fff;
@@ -567,7 +572,7 @@ body {
     }
   }
   & .hr-btm {
-   margin-top: 50px;
+    margin-top: 50px;
     height: 1px;
     background: #638db7;
   }
@@ -581,5 +586,4 @@ body {
       text-align: center;
     }
   }
-
 }
