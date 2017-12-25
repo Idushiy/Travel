@@ -66,7 +66,7 @@ $color-light: #edf6fa;
 
 ///
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../../img/home/background.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -98,7 +98,7 @@ body {
         display: none;
         position: absolute;
         padding: 15px 12px;
-        background: #ffffff;
+        background: #ffffff; 
         width: 210px;
         box-sizing: border-box;
         z-index: 20;
@@ -118,7 +118,7 @@ body {
   & .room {
     font-size: 15px;
     a {
-      background: url(../img/lk.png) 16px 11px no-repeat;
+      background: url(../../img/home/lk.png) 16px 11px no-repeat;
       display: block;
       width: 200px;
       height: 45px;
@@ -144,7 +144,7 @@ body {
 
 //top-content
 #top-content {
-  background: url(../img/fill.jpg);
+  //background-image: url(../img/fill.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ body {
         width: 100%;
         position: absolute;
         z-index: 3;
-        background: url(../img/img123.png) top left repeat-y;
+        background: url(../../img/home/img123.png) top left repeat-y;
         left: 0;
         border-radius: 5px;
         top: 0;
@@ -260,24 +260,24 @@ body {
       position: relative;
     }
     & .block-tour {
-      background: url(../img/img3.jpg) right;
+      background: url(../../img/home/img3.jpg) right;
     }
     & .block-excursion {
-      background: url(../img/img2.jpg) right;
+      background: url(../../img/home/img2.jpg) right;
     }
     & .block-hotel {
-      background: url(../img/img1.jpg) right;
+      background: url(../../img/home/img1.jpg) right;
     }
   }
   & .block-carousel {
     & .carousel-control-prev {
-      & span {
+      & span { 
         position: absolute;
         top: 50%;
         margin-top: -30px;
         height: 70px;
         width: 45px;
-        background: url(../img/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
+        background: url(../../img/home/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
         z-index: 23;
         left: 0;
         cursor: pointer;
@@ -290,7 +290,7 @@ body {
         margin-top: -30px;
         height: 70px;
         width: 45px;
-        background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
+        background: url(../../img/home/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
         right: 0;
 
       }
@@ -333,7 +333,7 @@ body {
     right: 0;
     bottom: 0;
     position: absolute;
-    padding: 5px 20px;
+    padding: 5px 15px;
     text-align: center;
     color: #ffffff;
     font-size: 15px;
@@ -347,7 +347,6 @@ body {
   }
   & .block-form {
     color: #fff;
-    //background: url(../img/form_bg.png) center center no-repeat;
     & img {
       position: absolute;
       z-index: 0;
@@ -578,7 +577,7 @@ body {
       & .modal-body {
         text-align: center;
         display: block;
-        & button {
+        & .btn-submit {
           border-radius: 4px;
           width: 235px;
           height: 40px;
@@ -589,12 +588,16 @@ body {
           font-family: $gothamMedium;
           margin: 15px 0;
         }
+        & span {
+          color: goldenrod;
+          font-size: 11px;
+        }
       }
     }
   }
   & .hr-btm {
     margin-top: 50px;
-    height: 1px;
+    height: 0.3px;
     background: #638db7;
   }
   & .footer-btm {

@@ -559,7 +559,7 @@ th {
 }
 
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../../img/home/background.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
@@ -618,7 +618,7 @@ body {
 }
 
 #header .room a {
-  background: url(../img/lk.png) 16px 11px no-repeat;
+  background: url(../../img/home/lk.png) 16px 11px no-repeat;
   display: block;
   width: 200px;
   height: 45px;
@@ -647,7 +647,6 @@ body {
 }
 
 #top-content {
-  background: url(../img/fill.jpg);
   background-position: center top;
   -webkit-background-size: cover;
           background-size: cover;
@@ -763,7 +762,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 3;
-  background: url(../img/img123.png) top left repeat-y;
+  background: url(../../img/home/img123.png) top left repeat-y;
   left: 0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -781,15 +780,15 @@ body {
 }
 
 #tours .block-travel .block-tour {
-  background: url(../img/img3.jpg) right;
+  background: url(../../img/home/img3.jpg) right;
 }
 
 #tours .block-travel .block-excursion {
-  background: url(../img/img2.jpg) right;
+  background: url(../../img/home/img2.jpg) right;
 }
 
 #tours .block-travel .block-hotel {
-  background: url(../img/img1.jpg) right;
+  background: url(../../img/home/img1.jpg) right;
 }
 
 #tours .block-carousel .carousel-control-prev span {
@@ -798,7 +797,7 @@ body {
   margin-top: -30px;
   height: 70px;
   width: 45px;
-  background: url(../img/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
+  background: url(../../img/home/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
   z-index: 23;
   left: 0;
   cursor: pointer;
@@ -810,7 +809,7 @@ body {
   margin-top: -30px;
   height: 70px;
   width: 45px;
-  background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
+  background: url(../../img/home/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
   right: 0;
 }
 
@@ -848,7 +847,7 @@ body {
   right: 0;
   bottom: 0;
   position: absolute;
-  padding: 5px 20px;
+  padding: 5px 15px;
   text-align: center;
   color: #ffffff;
   font-size: 15px;
@@ -1148,7 +1147,7 @@ body {
   display: block;
 }
 
-#footer .phone .modal .modal-body button {
+#footer .phone .modal .modal-body .btn-submit {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   width: 235px;
@@ -1161,9 +1160,14 @@ body {
   margin: 15px 0;
 }
 
+#footer .phone .modal .modal-body span {
+  color: goldenrod;
+  font-size: 11px;
+}
+
 #footer .hr-btm {
   margin-top: 50px;
-  height: 1px;
+  height: 0.3px;
   background: #638db7;
 }
 
