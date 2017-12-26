@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('default',/*['css-libs'],*/ function () {
-    return gulp.src(['www/scss/*.scss', 'www/scss/*.sass'])
+    return gulp.src(['www/scss/main.scss', 'www/scss/main.sass']) //  /*.scss
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('www/css'))
@@ -75,7 +75,7 @@ gulp.task('clean', function () {
 
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
-    gulp.watch(['www/scss/**/*.scss', 'www/scss/**/*.sass'], ['css-libs']);
+    gulp.watch(['www/scss/main.scss', 'www/scss/main.sass'], ['css-libs']); //  /**/*.scss
 
     gulp.watch('www/*.html', browserSync.reload);
     gulp.watch('www/js/**/*.js', browserSync.reload);

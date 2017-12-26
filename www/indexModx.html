@@ -13,7 +13,7 @@
     <!--old-->
     <link href="/new/css/magnific-popup.css" rel="stylesheet">
     <link href="/new/css/jquery-ui.css" rel="stylesheet">
-    <!--<link href="/new/css/style.css" rel="stylesheet">-->
+
 
 
     <!--css-->
@@ -36,39 +36,30 @@
                 <ul class="navbar-nav">
                     <li class="nav-item pr-2">
                         <a class="nav-link text-capitalize text-white" href="[[~2]]">о комании</a>
-                        <ul class="navbar-nav navbar-hidden">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Финансовые гарантии</a></li>
-                            <li><a href="#">СМИ о нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Новости</a></li>
-                        </ul>
+                        [[pdoMenu?
+                        &parents=`2`
+                        &level=`1`
+                        &tplOuter=`@INLINE <ul class="navbar-nav navbar-hidden">[[+wrapper]]</ul>`
+                        &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                    ]]
                     </li>
                     <li class="nav-item pr-2">
                         <a class="nav-link text-capitalize text-white" href="[[~4]]">агенствам</a>
-                        <ul class="navbar-nav navbar-hidden">
-                            <li><a href="#">Сотрудничество</a></li>
-                            <li><a href="#">Оплата туров</a></li>
-                            <li><a href="#">Страхование</a></li>
-                            <li><a href="#">Рекламные туры</a></li>
-                            <li><a href="#">Выдача документов</a></li>
-                            <li><a href="#">Памятки по курортам</a></li>
-                            <li><a href="#">Архив курсов валют</a></li>
-                        </ul>
+                        [[pdoMenu?
+                        &parents=`4`
+                        &level=`1`
+                        &tplOuter=`@INLINE <ul class="navbar-nav navbar-hidden">[[+wrapper]]</ul>`
+                        &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                    ]]
                     </li>
                     <li class="nav-item pr-2">
                         <a class="nav-link text-capitalize text-white" href="[[~3]]">китай</a>
-                        <ul class="navbar-nav navbar-hidden">
-                            <li><a href="#">Правила въезда на о.Хайнань</a></li>
-                            <li><a href="#">Авиабилеты</a></li>
-                            <li><a href="#">Трансфер</a></li>
-                            <li><a href="#">Медицинские центры</a></li>
-                            <li><a href="#">Отели</a></li>
-                            <li><a href="#">Экскурсии</a></li>
-                            <li><a href="#">Памятка для туристов</a></li>
-                            <li><a href="#">Правила предоставления доп. кровати</a></li>
-                            <li><a href="#">Система FORTUNA - Китай</a></li>
-                        </ul>
+                        [[pdoMenu?
+                        &parents=`3`
+                        &level=`1`
+                        &tplOuter=`@INLINE <ul class="navbar-nav navbar-hidden">[[+wrapper]]</ul>`
+                        &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                    ]]
                     </li>
                 </ul>
             </div>
@@ -130,10 +121,9 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active ">
                         <a href="http://prtc.travel/kitaj/oteli/buxta-yalunvan/sanya-marriott-yalong-bay-resort-i-spa/">
-                            <img class="d-block w-100" src="assets/img/home/image.jpg">
-
+                            <img class="d-block w-100" src="image/home/marriot-Yalongbay2.jpg">
                             <div class="top-title text-capitalize position-absolute">
-                                Санкт-Петербург-Хайнань, <span>Sanya Marriott Yalongbay Resort & Spa 5*</span>
+                                Санкт-Петербург-Хайнань, <span class="d-block">Sanya Marriott Yalongbay Resort & Spa 5*</span>
                             </div>
                             <div class="btm-title text-capitalize">
                                 Номер: Mountain View Room | DBL
@@ -146,10 +136,10 @@
                     </div>
                     <div class="carousel-item">
                         <a href="http://prtc.travel/kitaj/oteli/boao/boao-yudaiwan-hotel/">
-                            <img class="d-block w-100" src="assets/img/home/image.jpg">
+                            <img class="d-block w-100" src="image/home/YUDAIWAN2.jpg">
 
                             <div class="top-title text-capitalize position-absolute">
-                                Москва-Хайнань, <span>BOAO YUDAIWAN 4* (Boao) </span>
+                                Москва-Хайнань, <span class="d-block">BOAO YUDAIWAN 4* (Boao) </span>
                             </div>
                             <div class="btm-title text-capitalize">
                                 Номер: Superior Room | DBL
@@ -163,9 +153,9 @@
                     </div>
                     <div class="carousel-item">
                         <a href="http://prtc.travel/kitaj/oteli/buxta-chistoj-vodyi/infinity-ocean-beach-resort/">
-                            <img class="d-block w-100" src="assets/img/home/image.jpg">
+                            <img class="d-block w-100" src="image/home/infinity2.jpg">
                             <div class="top-title text-capitalize position-absolute">
-                                Казань-Хайнань, <span> INFINITY OCEAN BEACH RESORT 4* (Clear Water Bay)</span>
+                                Казань-Хайнань, <span class="d-block"> INFINITY OCEAN BEACH RESORT 4* (Clear Water Bay)</span>
                             </div>
                             <div class="btm-title text-capitalize">
                                 Номер: Deluxe Room | DBL
@@ -177,16 +167,16 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#">
-                            <img class="d-block w-100 " src="assets/img/home/image.jpg">
+                        <a href="http://prtc.travel/kitaj/oteli/buxta-chistoj-vodyi/infinity-ocean-beach-resort">
+                            <img class="d-block w-100 " src="image/home/david2.jpg">
                             <div class="top-title text-capitalize position-absolute">
-                                тюмень
+                                Тюмень-Хайнань, <span class="d-block"> DAVID LEGENDARY 4* (Sanya Bay)</span>
                             </div>
                             <div class="btm-title text-capitalize">
-                                номер: superior room | DBL
+                                Номер: Garden View Room | DBL
                             </div>
                             <div class="price">
-                                <span class="d-block">11213 RUB</span>
+                                <span class="d-block">33503 RUB</span>
                                 1/2 DBL
                             </div>
                         </a>
@@ -238,7 +228,7 @@
                 <div class="col-lg-4 pl-lg-0 pl-xl-4">
                     <form class="pl-xl-3">
                         <div class="form-group pb-2 d-inline-flex d-lg-block">
-                            <input type="email" class="form-control" id="e-mail" placeholder="Введите Ваш е-email">
+                            <input type="email" class="form-control" id="e-mail" placeholder="Введите Ваш е-email или Телефон">
                         </div>
                         <button type="submit" class="btn ">Подписаться</button>
                     </form>
@@ -424,7 +414,7 @@
                     <div class="d-inline-flex">
                         <span class="mr-3 fa fa-usd"> <span class="text-uppercase">usd [[!+USD]]</span></span>
                         <span class="mr-2 fa fa-jpy"> <span class="text-uppercase">cny [[!+CNY]]</span></span>
-                        <a href="" class="text-white">Архив валют</a>
+                        <a href="[[~644]]" class="text-white">Архив валют</a>
                     </div>
                     <hr class="bg-white my-1">
                     <span class="mr-3"><img src="assets/img/home/obl.png" alt="" class="img-fluid"> <span class="mx-1">Хайкоу</span>
@@ -434,40 +424,32 @@
             </div>
             <div class="col-lg-2 company ">
                 <h6 class=" ">О компании</h6>
-                <ul class="navbar-nav">
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Финансовые гарантии</a></li>
-                    <li><a href="#">СМИ о нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
+                [[pdoMenu?
+                &parents=`2`
+                &level=`1`
+                &tplOuter=`@INLINE <ul class="navbar-nav">[[+wrapper]]</ul>`
+                &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                ]]
 
             </div>
             <div class="col-lg-2 agents">
                 <h6 class="4">Aгентствам</h6>
-                <ul class="navbar-nav">
-                    <li><a href="#">Сотрудничество</a></li>
-                    <li><a href="#">Оплата туров</a></li>
-                    <li><a href="#">Страхование</a></li>
-                    <li><a href="#">Рекламные туры</a></li>
-                    <li><a href="#">Выдача документов</a></li>
-                    <li><a href="#">Памятки по курортам</a></li>
-                    <li><a href="#">Архив курсов валют</a></li>
-                </ul>
+                [[pdoMenu?
+                &parents=`4`
+                &level=`1`
+                &tplOuter=`@INLINE <ul class="navbar-nav">[[+wrapper]]</ul>`
+                &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+
+                ]]
             </div>
             <div class="col-lg-3 china">
                 <h6 class="">китай</h6>
-                <ul class="navbar-nav">
-                    <li><a href="#">Правила въезда на о.Хайнань</a></li>
-                    <li><a href="#">Авиабилеты</a></li>
-                    <li><a href="#">Трансфер</a></li>
-                    <li><a href="#">Медицинские центры</a></li>
-                    <li><a href="#">Отели</a></li>
-                    <li><a href="#">Экскурсии</a></li>
-                    <li><a href="#">Памятка для туристов</a></li>
-                    <li><a href="#">Правила предоставления доп. кровати</a></li>
-                    <li><a href="#">Система FORTUNA - Китай</a></li>
-                </ul>
+                [[pdoMenu?
+                &parents=`3`
+                &level=`1`
+                &tplOuter=`@INLINE <ul class="navbar-nav">[[+wrapper]]</ul>`
+                &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                ]]
 
             </div>
             <div class="col-lg-2 phone px-0">
@@ -477,7 +459,7 @@
                 <div class="footer_phone">
                     Номер для туристов: <span>+7 (495) 133-90-83</span>
                 </div>
-                <a href="#call-popup" class="btn " data-toggle="modal" data-target="#phoneModal">Обратный звонок</a>
+                <a href="#" class="btn " data-toggle="modal" data-target="#phoneModal">Обратный звонок</a>
 
                 <!-- The modal -->
                 <div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -490,7 +472,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form class=" text-dark">
+                                <form class=" text-dark" id="form_call">
                                     <input type="text" name="phone-number" id="phone-number"
                                            class="form-control w-50 mx-auto bfh-phone"
                                            data-format="+7 (ddd) ddd-dddd">
@@ -531,6 +513,47 @@
 <script charset="UTF-8" src="/new/js/jquery.maskedinput.js" type="text/javascript"></script>
 <script src="/assets/js/script.js" type="text/javascript"></script>
 
+
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45912150 = new Ya.Metrika({
+                    id:45912150,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45912150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript">
+    document.write("<a href='//www.liveinternet.ru/click' "+
+        "target=_blank><img src='//counter.yadro.ru/hit?t26.1;r"+
+        escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+        "' alt='' title='LiveInternet: показано число посетителей за"+
+        " сегодня' "+
+        "border='0' width='88' height='15'><\/a>")
+</script><!--/LiveInternet-->
 
 </body>
 </html>

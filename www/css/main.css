@@ -929,6 +929,10 @@ body {
   }
 }
 
+#tours .block-form input {
+  font-size: 14px;
+}
+
 #tours .block-form button {
   background: #fbbd33;
   font-family: GothamPro-Medium, Arial, sans-serif;

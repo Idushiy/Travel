@@ -377,9 +377,12 @@ body {
     }
     & .form-group {
       @include break($xs, $lg) {
-        padding-top: 0px;
+        padding-top: 0;
       }
       padding-top: 33px;
+    }
+    & input {
+      font-size: 14px;
     }
     & button {
       background: $color-yellow;

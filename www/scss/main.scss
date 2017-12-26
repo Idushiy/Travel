@@ -382,6 +382,9 @@ body {
       }
       padding-top: 33px;
     }
+    & input {
+      font-size: 14px;
+    } 
     & button {
       background: $color-yellow;
       font-family: $gothamMedium;
