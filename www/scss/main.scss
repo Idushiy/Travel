@@ -55,7 +55,7 @@ $color-light: #edf6fa;
   color: $color-dark-gray;
 }
 
-// classes
+//classes
 .z-0 {
   z-index: 0;
 }
@@ -64,7 +64,7 @@ $color-light: #edf6fa;
   z-index: 1000;
 }
 
-///
+//body
 body {
   background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
@@ -121,7 +121,7 @@ body {
       background: url(../img/lk.png) 16px 11px no-repeat;
       display: block;
       width: 200px;
-      height: 45px;
+      height: 43px;
       line-height: 40px;
       padding-left: 55px;
       box-sizing: border-box;
@@ -190,8 +190,12 @@ body {
   }
   & .block-bay {
     margin-bottom: 120px;
+
   }
   & .block-phone {
+    &>div {
+      font-size: 14px;
+    }
     justify-content: center;
     @include break($xs, $md) {
       font-size: 13px;
@@ -378,13 +382,13 @@ body {
     }
     & .form-group {
       @include break($xs, $lg) {
-        padding-top: 0px;
+        padding-top: 0;
       }
-      padding-top: 33px;
+      padding-top: 29px;
     }
     & input {
       font-size: 14px;
-    } 
+    }
     & button {
       background: $color-yellow;
       font-family: $gothamMedium;
@@ -462,6 +466,7 @@ body {
   }
 }
 
+//medals
 #medals {
   background-color: $color-light;
   & .title-medals {
@@ -477,9 +482,10 @@ body {
   }
 }
 
+//ad
 #ad {
   & .row {
-    padding-bottom: 65px;
+    padding-bottom: 75px;
     & img {
       @include break($xs, $lg) {
         padding-bottom: 20px;
@@ -488,6 +494,7 @@ body {
   }
 }
 
+//footer
 #footer {
   & .social {
     margin-bottom: 60px;
@@ -500,6 +507,10 @@ body {
     font-size: 13px;
     & .fa-usd::before, .fa-jpy::before {
       font-size: 16px;
+      color: rgba(255, 255, 255, 0.71);
+    }
+    & .celsius {
+      font-size: 15px;
     }
   }
   & .company, .agents, .china {
@@ -518,7 +529,7 @@ body {
     }
     & li {
       font-size: 13px;
-      margin-bottom: 5px;
+      margin-bottom: 5px;  
       @include break($xs, $lg) {
         font-size: 19px;
         margin-bottom: 15px;

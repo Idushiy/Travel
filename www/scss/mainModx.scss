@@ -98,7 +98,7 @@ body {
         display: none;
         position: absolute;
         padding: 15px 12px;
-        background: #ffffff; 
+        background: #ffffff;
         width: 210px;
         box-sizing: border-box;
         z-index: 20;
@@ -121,7 +121,7 @@ body {
       background: url(../../img/home/lk.png) 16px 11px no-repeat;
       display: block;
       width: 200px;
-      height: 45px;
+      height: 43px;
       line-height: 40px;
       padding-left: 55px;
       box-sizing: border-box;
@@ -192,6 +192,9 @@ body {
     margin-bottom: 120px;
   }
   & .block-phone {
+    &>div {
+      font-size: 14px;
+    }
     justify-content: center;
     @include break($xs, $md) {
       font-size: 13px;
@@ -271,7 +274,7 @@ body {
   }
   & .block-carousel {
     & .carousel-control-prev {
-      & span { 
+      & span {
         position: absolute;
         top: 50%;
         margin-top: -30px;
@@ -379,7 +382,7 @@ body {
       @include break($xs, $lg) {
         padding-top: 0;
       }
-      padding-top: 33px;
+      padding-top: 29px;
     }
     & input {
       font-size: 14px;
@@ -478,7 +481,7 @@ body {
 
 #ad {
   & .row {
-    padding-bottom: 65px;
+    padding-bottom: 75px;
     & img {
       @include break($xs, $lg) {
         padding-bottom: 20px;
@@ -499,12 +502,15 @@ body {
     font-size: 13px;
     & .fa-usd::before, .fa-jpy::before {
       font-size: 16px;
+      color: rgba(255, 255, 255, 0.71);;
+    }
+    & .celsius {
+      font-size: 15px;
     }
   }
   & .company, .agents, .china {
     color: #fff;
     & h6 {
-
       text-transform: uppercase;
       font-family: $gothamMedium;
       font-size: 14px;
@@ -523,7 +529,6 @@ body {
         margin-bottom: 15px;
       }
       & a {
-        text-transform: capitalize;
         color: #fff;
       }
     }
@@ -554,7 +559,7 @@ body {
       font-size: 12.55px;
       text-transform: none;
       font-family: $gothamMedium;
-      margin-top: 25px;
+      margin-top: 20px;
       text-decoration: none;
       &:hover {
         @extend %for-hover;
@@ -592,7 +597,7 @@ body {
           margin: 15px 0;
         }
         & span {
-          color: goldenrod;
+          color: #99958d;
           font-size: 11px;
         }
       }
@@ -600,7 +605,7 @@ body {
   }
   & .hr-btm {
     margin-top: 50px;
-    height: 0.3px;
+    height: 0.3px; 
     background: #638db7;
   }
   & .footer-btm {
