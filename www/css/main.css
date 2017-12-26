@@ -574,22 +574,31 @@ body {
   max-width: 1173px !important;
 }
 
-#header #nav-content {
+#header-fix {
+  display: none;
+}
+
+#header-fix .room a {
+  background: url(../img/lk.png) 16px 11px no-repeat;
+  border: 1px solid #343434 !important;
+}
+
+#header #nav-content, #header #nav-content-fix, #header-fix #nav-content, #header-fix #nav-content-fix {
   font-size: 16px;
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
-  #header #nav-content {
+  #header #nav-content, #header #nav-content-fix, #header-fix #nav-content, #header-fix #nav-content-fix {
     padding-top: 20px;
     font-size: 22px;
   }
 }
 
-#header #nav-content ul a:hover {
+#header #nav-content ul a:hover, #header #nav-content-fix ul a:hover, #header-fix #nav-content ul a:hover, #header-fix #nav-content-fix ul a:hover {
   text-decoration: underline !important;
 }
 
-#header #nav-content ul .navbar-hidden {
+#header #nav-content ul .navbar-hidden, #header #nav-content-fix ul .navbar-hidden, #header-fix #nav-content ul .navbar-hidden, #header-fix #nav-content-fix ul .navbar-hidden {
   display: none;
   position: absolute;
   padding: 15px 12px;
@@ -600,24 +609,24 @@ body {
   z-index: 20;
 }
 
-#header #nav-content ul .navbar-hidden li {
+#header #nav-content ul .navbar-hidden li, #header #nav-content-fix ul .navbar-hidden li, #header-fix #nav-content ul .navbar-hidden li, #header-fix #nav-content-fix ul .navbar-hidden li {
   padding-top: 5px;
 }
 
-#header #nav-content ul .navbar-hidden a {
+#header #nav-content ul .navbar-hidden a, #header #nav-content-fix ul .navbar-hidden a, #header-fix #nav-content ul .navbar-hidden a, #header-fix #nav-content-fix ul .navbar-hidden a {
   font-size: 14px;
   color: #2e2e2e;
 }
 
-#header #nav-content ul li:hover ul {
+#header #nav-content ul li:hover ul, #header #nav-content-fix ul li:hover ul, #header-fix #nav-content ul li:hover ul, #header-fix #nav-content-fix ul li:hover ul {
   display: block;
 }
 
-#header .room {
+#header .room, #header-fix .room {
   font-size: 15px;
 }
 
-#header .room a {
+#header .room a, #header-fix .room a {
   background: url(../img/lk.png) 16px 11px no-repeat;
   display: block;
   width: 200px;
@@ -635,14 +644,14 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
-  #header .room a {
+  #header .room a, #header-fix .room a {
     width: 190px;
     height: 40px;
     padding-left: 50px;
   }
 }
 
-#header .btn-hover:hover {
+#header .btn-hover:hover, #header-fix .btn-hover:hover {
   opacity: 0.8;
 }
 
@@ -1183,7 +1192,7 @@ body {
 #footer .footer-btm {
   font-family: GothamPro-Medium, Arial, sans-serif;
   font-size: 12px;
-  margin-bottom: 120px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 300px) and (max-width: 992px) {

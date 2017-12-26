@@ -82,9 +82,20 @@ body {
   max-width: 1173px !important;
 }
 
+
+#header-fix{
+  display: none;
+  & .room {
+    a {
+      background: url(../img/lk.png) 16px 11px no-repeat;
+      border: 1px solid #343434 !important;
+    }
+  }
+}
+
 //header
-#header {
-  & #nav-content {
+#header, #header-fix {
+  & #nav-content, #nav-content-fix {
     font-size: 16px;
     @include break($xs, $md) {
       padding-top: 20px;
@@ -529,7 +540,7 @@ body {
     }
     & li {
       font-size: 13px;
-      margin-bottom: 5px;  
+      margin-bottom: 5px;
       @include break($xs, $lg) {
         font-size: 19px;
         margin-bottom: 15px;
@@ -614,7 +625,7 @@ body {
   & .footer-btm {
     font-family: $gothamMedium;
     font-size: 12px;
-    margin-bottom: 120px;
+    margin-bottom: 35px;
   }
   @include break($xs, $lg) {
     & .navbar-nav {
