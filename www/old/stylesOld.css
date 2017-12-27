@@ -586,6 +586,7 @@ h2 span{
     padding-top:60px;
     padding-bottom:60px;
 }
+
 .main_partners .main_partners_block{
     position: relative;
 }
@@ -976,6 +977,7 @@ h2 span{
 .header_fix .fix_menu ul li ul li{
     background: none;
 }
+
 .header_search{
     padding-top:25px;
     padding-bottom:22px;
@@ -1045,7 +1047,8 @@ h2 span{
     float:left;
     cursor:pointer;
 }
-.main_slider_block{
+
+.main_sli der_block{
     /*position: absolute;
     top:0;
     z-index: 3;
@@ -1146,6 +1149,7 @@ h2 span{
 
     line-height: 30px;
 }
+
 /* line 1004, ../sass/screen.scss */
 .city div:hover {
     background: #f1f1f1;

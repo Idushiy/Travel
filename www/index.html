@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/jquery-ui.css">
+
 
     <!--css-->
     <link rel="stylesheet" href="css/main.min.css">
@@ -79,11 +81,11 @@
 
     </div>
 </div>
-
+<!--Header fix-->
 <div id="header-fix" class="fixed-top bg-white ">
     <div class="container col-3">
 
-        <nav class="navbar navbar-expand-sm navbar-dark px-0">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -112,7 +114,7 @@
                             <li><a href="#">Архив курсов валют</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item pr-2">
+                    <li class="nav-item pr-2 navbar-light">
                         <a class="nav-link text-capitalize text-dark" href="#">китай</a>
                         <ul class="navbar-nav navbar-hidden">
                             <li><a href="#">Правила въезда на о.Хайнань</a></li>
@@ -128,12 +130,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="fix-room ml-auto pb-1 align-top mr-lg-4">
+            <div class="fix-room ml-auto pb-1 align-top mr-lg-4 ">
                 <a href="">
                     <img src="img/lk2.png" alt="" class="img-fluid">
                 </a>
             </div>
-            <div class="fix-logo mr-lg-2">
+            <div class="fix-logo mr-lg-2 ">
                 <a href="">
                     <img src="img/logo_mini.png" alt="" class="img-fluid">
                 </a>
@@ -143,32 +145,118 @@
     </div>
 </div>
 
-<!--top content-->
-<div id="top-content" class="container">
 
-    <div class="row justify-content-between pt-4">
-        <div class="col-md-3 text-center text-md-left">
-            <a href=""><img src="img/logo.png" alt="" class="pl-lg-4 img-fluid"></a>
-        </div>
-        <div class="col-md-6 col-xl-4 text-white d-inline-flex block-phone pt-3 pt-md-0 px-0 mr-lg-2">
-            <div class="pr-2 pl-lg-4 pl-md-0">
-                Номер для агентств:
-                <div class="phone">8 (800)<span> 777-70-27</span></div>
+<!--top content-->
+<div id="top-content" class="container ">
+    <div class=" position-absolute z-55">
+        <div class="row justify-content-between pt-4 ">
+            <div class="col-md-3 text-center text-md-left">
+                <a href=""><img src="img/logo.png" alt="" class="pl-lg-4 img-fluid"></a>
             </div>
-            <span class="delimiter bg-main"></span>
-            <div class="pl-2">
-                Номер для туристов:
-                <div class="phone">+7 (499)<span> 133-90-83</span></div>
+            <div class="col-md-6 col-xl-4 text-white d-inline-flex block-phone pt-3 pt-md-0 px-0 mr-lg-2">
+                <div class="pr-2 pl-lg-4 pl-md-0">
+                    Номер для агентств:
+                    <div class="phone">8 (800)<span> 777-70-27</span></div>
+                </div>
+                <span class="delimiter bg-main"></span>
+                <div class="pl-2">
+                    Номер для туристов:
+                    <div class="phone">+7 (499)<span> 133-90-83</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row header_search align-items-end d-none d-lg-block">
+            <div class="col-12 px-0 ">
+
+                <form method="get" action="[[~679]]" onsubmit="yaCounter34756620.reachGoal('NAITI-TUR');return true;">
+                    <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from">
+                    <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city">
+                    <div class="city" id="city">
+                        <div data-id="170">Барнаул</div>
+                        <div data-id="269">Благовещенск</div>
+                        <div data-id="233">Владивосток</div>
+                        <div data-id="932">Екатеринбург</div>
+                        <div data-id="423">Иркутск</div>
+                        <div data-id="128">Казань</div>
+                        <div data-id="492">Кемерово</div>
+                        <div data-id="221">Красноярск</div>
+                        <div data-id="2">Москва</div>
+                        <div data-id="1041">Новокузнецк</div>
+                        <div data-id="752">Новосибирск</div>
+                        <div data-id="854">Ростов-на-Дону</div>
+                        <div data-id="1114">Санкт-Петербург</div>
+                        <div data-id="1018">Томск</div>
+                        <div data-id="1041">Тюмень</div>
+                        <div data-id="33">Улан-Удэ</div>
+                        <div data-id="25">Уфа</div>
+                        <div data-id="267">Хабаровск</div>
+                        <div data-id="1077">Челябинск</div>
+                        <div data-id="1088">Чита</div>
+
+                        <!--<div >Москва</div>
+                        <div >Благовещенск</div>
+                        <div >Владивосток</div>
+                        <div >Новосибирск</div>
+                        <div >Кемерово</div>
+                        <div >Красноярск</div>
+                        <div >Хабаровск</div>
+                        <div >Иркутск</div>
+                        <div >Санкт-Петербург</div>
+                        <div >Казань</div>
+                        <div >Уфа</div>
+                        <div >Екатеринбург</div>-->
+                    </div>
+                    <input type="text" value="Китай" readonly class="inp_where">
+                    <input type="text" class="inp_begin" id="datepicker" placeholder="Начало тура">
+                    <input type="text" id="night" name="night" class="inp_night" readonly placeholder="Ночей до" value="Ночей до">
+                    <div class="night-drop" id="night-drop">
+
+                        <div>7</div>
+                        <div>14</div>
+                        <div>21</div>
+                    </div>
+                    <input type="text" id="passagir" name="passagir" class="inp_kol" readonly placeholder="2 Пассажира" value="2 Пассажира">
+                    <div class="passagir-drop" id="passagir-drop">
+                        <div>1 Пассажир</div>
+                        <div>2 Пассажира</div>
+                        <div>3 Пассажира</div>
+                        <div>4 Пассажира</div>
+
+                    </div>
+
+                    <input type="submit" value="Найти тур">
+                    <div class="clear"></div>
+                </form>
+                <!--<form>
+                  <input type="text" value="" class="inp_from" placeholder="Откуда">
+                  <input type="text" value="" class="inp_where" placeholder="Куда">
+                  <input type="text" value="" class="inp_begin" placeholder="Начало тура">
+                  <input type="text" value="" class="inp_night" placeholder="Кол-во ночей">
+                  <input type="text" value="" class="inp_kol" placeholder="Кол-во пассажиров">
+                  <input type="submit" value="Найти тур">
+                  <div class="clear"></div>
+                </form>-->
             </div>
         </div>
     </div>
-
-    <div class="row">
+    <div class="row ">
         <div class="col-12 px-0">
+            <div class="row justify-content-between">
+                <div class="main_slider_arrow_left"></div>
+                <div class="main_slider_arrow_right"></div>
+            </div>
             <div id="main_slider" class="owl-carousel">
                 <div class="main_slider_item" style="background-image: url(img/fill.jpg)">
                     <div class="col-12 text-center block-bay">
-                        <div class="position-relative z-55 text-uppercase text-white" >
+                        <div class=" text-uppercase text-white">
+                            <p>живописная бухта <br> хайтангбей</p>
+                            <a href="#" class="btn">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_slider_item" style="background-image: url(img/fill.jpg)">
+                    <div class="col-12 text-center block-bay">
+                        <div class=" text-uppercase text-white">
                             <p>живописная бухта <br> хайтангбей</p>
                             <a href="#" class="btn">Подробней</a>
                         </div>
@@ -177,15 +265,6 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="row">
-        <div class="col-12 text-center block-bay">
-            <div class="text-uppercase text-white ">
-                <p>живописная бухта <br> хайтангбей</p>
-                <a href="#" class="btn">Подробней</a>
-            </div>
-        </div>
-    </div>-->
 
 </div>
 
@@ -425,30 +504,35 @@
 
 </div>
 
-<!--ad-->
+<!--partners-->
+<div id="ad" class="main_partners container bg-main">
+    <div class="container">
+        <div class="row pt-5 main_partners_block">
+            <div class="partners_arrow_left"></div>
+            <div class="partners_arrow_right"></div>
+            <div id="main_partners_slider" class="owl-carousel pl-5 pr-4">
+                <div class="main_partners_item">
+                    <img src="img/part-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="main_partners_item">
+                    <img src="img/part-2.jpg" alt="" class="img-fluid " style="padding-top: 15px">
+                </div>
+                <div class="main_partners_item">
+                    <img src="img/part-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="main_partners_item">
+                    <img src="img/part-4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="main_partners_item">
+                    <img src="img/part-5.jpg" alt="" class="img-fluid">
+                </div>
 
-<div id="ad" class="container bg-main ">
-    <div class="row pt-5 no-gutters text-center">
-        <div class="col-lg-3 col-md-5th text-lg-right">
-            <img src="img/part-1.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-3 col-md-5th">
-            <img src="img/part-2.jpg" alt="" class="img-fluid py-2">
-        </div>
-        <div class="col-lg-3 col-md-5th">
-            <img src="img/part-3.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-3 col-md-5th">
-            <img src="img/part-5.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-3 col-md-5th text-lg-left">
-            <img src="img/part-4.jpg" alt="" class="img-fluid">
+            </div>
         </div>
     </div>
 </div>
 
 <!--footer-->
-
 <div id="footer" class="pt-5 text-white">
     <div class="container ">
         <div class="row pb-5">
@@ -577,10 +661,15 @@
 <script src="libs/popper.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-formhelpers-phone.js"></script>
-<script src="old/main.js"></script>
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+<script src="libs/jquery-ui.js"></script>
+<!--<script src="libs/jquery-latest.js"></script>-->
 
+<script src="libs/jquery.maskedinput.js"></script>
+
+<!--Scripts-->
+<script src="js/main.js"></script>
 
 <script type="text/javascript">
     $(window).scroll(function () {
