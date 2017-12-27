@@ -4,6 +4,9 @@
 @import "fonts";
 @import "col-5th";
 
+// ../../img/home/
+// ../img/
+
 /*mixin*/
 @mixin break($args...) {
   @if length($args) == 1 {
@@ -72,6 +75,9 @@ $color-light: #edf6fa;
   z-index: 4;
 }
 
+.z-2 {
+  z-index: 3!important;
+}
 //body
 body {
   background-image: url(../img/background.jpg);
@@ -85,7 +91,7 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
- 
+
 .container {
   max-width: 1173px !important;
 }
@@ -173,7 +179,9 @@ body {
   padding-top: 25px;
   padding-bottom: 22px;
   background: rgba(0, 0, 0, 0.1);
-  margin-top:70px;
+  margin-top: -91px;
+  position: relative;
+  z-index: 5;
 
 }
 
@@ -182,7 +190,7 @@ body {
 .city {
   position: absolute;
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -209,7 +217,7 @@ body {
   position: absolute;
   right: calc(50% - 177px);
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -236,7 +244,7 @@ body {
   position: absolute;
   right: calc(33% - 174px);
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -261,11 +269,10 @@ body {
 
 
 .header_search {
-  margin-top: 26%;
   & input[type=text] {
     display: inline-block;
     height: 43px;
-    width: 196px;
+    width: 191px;
     box-sizing: border-box;
     border: none;
     line-height: 43px;
@@ -321,7 +328,7 @@ body {
 
   & input[type=submit] {
     background: url(../img/lupe.png) 12px 14px no-repeat #fac338;
-    width: 188px;
+    width: 173px;
     text-align: left;
     height: 43px;
     line-height: 43px;
@@ -361,6 +368,30 @@ body {
   margin-right:-583px;
 }
 
+@media (min-width: 576px) {
+  .logo-phone {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-phone {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-phone {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-phone {
+    max-width: 1175px;
+  }
+}
+
 //top-content
 #top-content, #top-slider {
   & .main_slider_item {
@@ -372,18 +403,22 @@ body {
     background-repeat: no-repeat;
     box-sizing: border-box;
     width: 100%;
-    & .block-bay {
-      //padding: 0 0 75px 0;
+
+  }
+  & .logo-phone {
+    @include break($xl) {
+      min-width: 1175px;
     }
   }
   & .delimiter {
     padding: 5px 0.5px;
     margin: 10px 0;
+    height: 30px;
   }
   & p {
     line-height: 1.2em;
     font-family: $gothamMedium;
-    //margin-top: 15px;
+
     font-size: 49px;
     font-stretch: extra-condensed;
     text-shadow: 0 1px 3.95px rgba(0, 0, 0, 0.22);
@@ -729,7 +764,7 @@ body {
   width: 12px;
   height: 21px;
   background: url(../img/arrow_left_blue.png) top left no-repeat;
-  top: 50%;
+  top: 46%;
   margin-top: -10px;
   left: 20px;
   position: absolute;
@@ -742,7 +777,7 @@ body {
   width: 12px;
   height: 21px;
   background: url(../img/arrow_right_blue.png) top left no-repeat;
-  top: 50%;
+  top: 46%;
   margin-top: -10px;
   right: 20px;
   position: absolute;

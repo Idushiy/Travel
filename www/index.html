@@ -148,102 +148,28 @@
 
 <!--top content-->
 <div id="top-content" class="container ">
-    <div class=" position-absolute z-55">
-        <div class="row justify-content-between pt-4 ">
-            <div class="col-md-3 text-center text-md-left">
-                <a href=""><img src="img/logo.png" alt="" class="pl-lg-4 img-fluid"></a>
-            </div>
-            <div class="col-md-6 col-xl-4 text-white d-inline-flex block-phone pt-3 pt-md-0 px-0 mr-lg-2">
-                <div class="pr-2 pl-lg-4 pl-md-0">
-                    Номер для агентств:
-                    <div class="phone">8 (800)<span> 777-70-27</span></div>
-                </div>
-                <span class="delimiter bg-main"></span>
-                <div class="pl-2">
-                    Номер для туристов:
-                    <div class="phone">+7 (499)<span> 133-90-83</span></div>
-                </div>
-            </div>
+
+    <div class="row pt-4 justify-content-between z-4 position-absolute logo-phone">
+        <div class="col-md-4 text-center text-md-left ">
+            <a href=""><img src="img/ny_logo.png" alt="" class="pl-lg-4 img-fluid " style="width: 80%;"></a>
         </div>
-        <div class="row header_search align-items-end d-none d-lg-block">
-            <div class="col-12 px-0 ">
-
-                <form method="get" action="[[~679]]" onsubmit="yaCounter34756620.reachGoal('NAITI-TUR');return true;">
-                    <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from">
-                    <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city">
-                    <div class="city" id="city">
-                        <div data-id="170">Барнаул</div>
-                        <div data-id="269">Благовещенск</div>
-                        <div data-id="233">Владивосток</div>
-                        <div data-id="932">Екатеринбург</div>
-                        <div data-id="423">Иркутск</div>
-                        <div data-id="128">Казань</div>
-                        <div data-id="492">Кемерово</div>
-                        <div data-id="221">Красноярск</div>
-                        <div data-id="2">Москва</div>
-                        <div data-id="1041">Новокузнецк</div>
-                        <div data-id="752">Новосибирск</div>
-                        <div data-id="854">Ростов-на-Дону</div>
-                        <div data-id="1114">Санкт-Петербург</div>
-                        <div data-id="1018">Томск</div>
-                        <div data-id="1041">Тюмень</div>
-                        <div data-id="33">Улан-Удэ</div>
-                        <div data-id="25">Уфа</div>
-                        <div data-id="267">Хабаровск</div>
-                        <div data-id="1077">Челябинск</div>
-                        <div data-id="1088">Чита</div>
-
-                        <!--<div >Москва</div>
-                        <div >Благовещенск</div>
-                        <div >Владивосток</div>
-                        <div >Новосибирск</div>
-                        <div >Кемерово</div>
-                        <div >Красноярск</div>
-                        <div >Хабаровск</div>
-                        <div >Иркутск</div>
-                        <div >Санкт-Петербург</div>
-                        <div >Казань</div>
-                        <div >Уфа</div>
-                        <div >Екатеринбург</div>-->
-                    </div>
-                    <input type="text" value="Китай" readonly class="inp_where">
-                    <input type="text" class="inp_begin" id="datepicker" placeholder="Начало тура">
-                    <input type="text" id="night" name="night" class="inp_night" readonly placeholder="Ночей до" value="Ночей до">
-                    <div class="night-drop" id="night-drop">
-
-                        <div>7</div>
-                        <div>14</div>
-                        <div>21</div>
-                    </div>
-                    <input type="text" id="passagir" name="passagir" class="inp_kol" readonly placeholder="2 Пассажира" value="2 Пассажира">
-                    <div class="passagir-drop" id="passagir-drop">
-                        <div>1 Пассажир</div>
-                        <div>2 Пассажира</div>
-                        <div>3 Пассажира</div>
-                        <div>4 Пассажира</div>
-
-                    </div>
-
-                    <input type="submit" value="Найти тур">
-                    <div class="clear"></div>
-                </form>
-                <!--<form>
-                  <input type="text" value="" class="inp_from" placeholder="Откуда">
-                  <input type="text" value="" class="inp_where" placeholder="Куда">
-                  <input type="text" value="" class="inp_begin" placeholder="Начало тура">
-                  <input type="text" value="" class="inp_night" placeholder="Кол-во ночей">
-                  <input type="text" value="" class="inp_kol" placeholder="Кол-во пассажиров">
-                  <input type="submit" value="Найти тур">
-                  <div class="clear"></div>
-                </form>-->
+        <div class="col-xl-4 col-md-6 text-white d-flex block-phone pt-3 pt-md-0 px-0 mr-lg-2">
+            <div class="pr-2 pl-lg-4 pl-md-0">
+                Номер для агентств:
+                <div class="phone">8 (800)<span> 777-70-27</span></div>
+            </div>
+            <span class="delimiter bg-main"></span>
+            <div class="pl-2">
+                Номер для туристов:
+                <div class="phone">+7 (499)<span> 133-90-83</span></div>
             </div>
         </div>
     </div>
     <div class="row ">
         <div class="col-12 px-0">
             <div class="row justify-content-between">
-                <div class="main_slider_arrow_left"></div>
-                <div class="main_slider_arrow_right"></div>
+                <div class="main_slider_arrow_left d-none d-lg-flex"></div>
+                <div class="main_slider_arrow_right d-none d-lg-flex"></div>
             </div>
             <div id="main_slider" class="owl-carousel">
                 <div class="main_slider_item" style="background-image: url(img/fill.jpg)">
@@ -265,9 +191,71 @@
             </div>
         </div>
     </div>
+    <div class="row header_search d-none d-lg-flex">
+        <div class="col-12 ">
 
+            <form method="get" action="[[~679]]" onsubmit="yaCounter34756620.reachGoal('NAITI-TUR');return true;">
+                <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from">
+                <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city">
+                <div class="city" id="city">
+                    <div data-id="170">Барнаул</div>
+                    <div data-id="269">Благовещенск</div>
+                    <div data-id="233">Владивосток</div>
+                    <div data-id="932">Екатеринбург</div>
+                    <div data-id="423">Иркутск</div>
+                    <div data-id="128">Казань</div>
+                    <div data-id="492">Кемерово</div>
+                    <div data-id="221">Красноярск</div>
+                    <div data-id="2">Москва</div>
+                    <div data-id="1041">Новокузнецк</div>
+                    <div data-id="752">Новосибирск</div>
+                    <div data-id="854">Ростов-на-Дону</div>
+                    <div data-id="1114">Санкт-Петербург</div>
+                    <div data-id="1018">Томск</div>
+                    <div data-id="1041">Тюмень</div>
+                    <div data-id="33">Улан-Удэ</div>
+                    <div data-id="25">Уфа</div>
+                    <div data-id="267">Хабаровск</div>
+                    <div data-id="1077">Челябинск</div>
+                    <div data-id="1088">Чита</div>
+
+                    <!--<div >Москва</div>
+                    <div >Благовещенск</div>
+                    <div >Владивосток</div>
+                    <div >Новосибирск</div>
+                    <div >Кемерово</div>
+                    <div >Красноярск</div>
+                    <div >Хабаровск</div>
+                    <div >Иркутск</div>
+                    <div >Санкт-Петербург</div>
+                    <div >Казань</div>
+                    <div >Уфа</div>
+                    <div >Екатеринбург</div>-->
+                </div>
+                <input type="text" value="Китай" readonly class="inp_where">
+                <input type="text" class="inp_begin" id="datepicker" placeholder="Начало тура">
+                <input type="text" id="night" name="night" class="inp_night" readonly placeholder="Ночей до" value="Ночей до">
+                <div class="night-drop" id="night-drop">
+
+                    <div>7</div>
+                    <div>14</div>
+                    <div>21</div>
+                </div>
+                <input type="text" id="passagir" name="passagir" class="inp_kol" readonly placeholder="2 Пассажира" value="2 Пассажира">
+                <div class="passagir-drop" id="passagir-drop">
+                    <div>1 Пассажир</div>
+                    <div>2 Пассажира</div>
+                    <div>3 Пассажира</div>
+                    <div>4 Пассажира</div>
+
+                </div>
+
+                <input type="submit" value="Найти тур">
+                <div class="clear"></div>
+            </form>
+        </div>
+    </div>
 </div>
-
 
 <!--tours-->
 <div id="tours" class="container bg-main">
@@ -628,14 +616,10 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form class=" text-dark">
-                                    <input type="text" name="phone-number"
-                                           class="form-control w-50 mx-auto bfh-phone"
-                                           data-format="+7 (ddd) ddd-dddd" placeholder="Телефон" required>
-
+                                <form id="form_call" method="post" action="" class=" text-dark">
+                                    <input class="text-dark form-control w-50 mx-auto" type="text" name="phone_field" value="" placeholder="Телефон" required>
+                                    <input type="submit" value="Подписаться" class="btn btn-submit">
                                 </form>
-                                <span class="d-block">Введите вашь телефон</span>
-                                <input type="submit" value="Подписаться" class="btn btn-submit" data-dismiss="modal">
                             </div>
                         </div>
                     </div>
@@ -660,11 +644,11 @@
 <script src="libs/jquery.min.js"></script>
 <script src="libs/popper.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-formhelpers-phone.js"></script>
+<!--<script src="libs/bootstrap-formhelpers-phone.js"></script>-->
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 <script src="libs/jquery-ui.js"></script>
-<!--<script src="libs/jquery-latest.js"></script>-->
+
 
 <script src="libs/jquery.maskedinput.js"></script>
 

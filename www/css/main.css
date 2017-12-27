@@ -566,6 +566,10 @@ th {
   z-index: 4;
 }
 
+.z-2 {
+  z-index: 3 !important;
+}
+
 body {
   background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
@@ -677,13 +681,15 @@ body {
   padding-top: 25px;
   padding-bottom: 22px;
   background: rgba(0, 0, 0, 0.1);
-  margin-top: 70px;
+  margin-top: -91px;
+  position: relative;
+  z-index: 5;
 }
 
 .city {
   position: absolute;
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -711,7 +717,7 @@ body {
   right: -webkit-calc(50% - 177px);
   right: calc(50% - 177px);
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -739,7 +745,7 @@ body {
   right: -webkit-calc(33% - 174px);
   right: calc(33% - 174px);
   display: none;
-  width: 176px;
+  width: 171px;
   z-index: 99;
   margin-top: 39px;
 }
@@ -765,14 +771,10 @@ body {
   display: none;
 }
 
-.header_search {
-  margin-top: 26%;
-}
-
 .header_search input[type=text] {
   display: inline-block;
   height: 43px;
-  width: 196px;
+  width: 191px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
@@ -830,7 +832,7 @@ body {
 
 .header_search input[type=submit] {
   background: url(../img/lupe.png) 12px 14px no-repeat #fac338;
-  width: 188px;
+  width: 173px;
   text-align: left;
   height: 43px;
   line-height: 43px;
@@ -871,6 +873,30 @@ body {
   margin-right: -583px;
 }
 
+@media (min-width: 576px) {
+  .logo-phone {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-phone {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-phone {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-phone {
+    max-width: 1175px;
+  }
+}
+
 #top-content .main_slider_item, #top-slider .main_slider_item {
   position: relative;
   min-height: 467px;
@@ -884,9 +910,16 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  #top-content .logo-phone, #top-slider .logo-phone {
+    min-width: 1175px;
+  }
+}
+
 #top-content .delimiter, #top-slider .delimiter {
   padding: 5px 0.5px;
   margin: 10px 0;
+  height: 30px;
 }
 
 #top-content p, #top-slider p {
@@ -1271,7 +1304,7 @@ body {
   width: 12px;
   height: 21px;
   background: url(../img/arrow_left_blue.png) top left no-repeat;
-  top: 50%;
+  top: 46%;
   margin-top: -10px;
   left: 20px;
   position: absolute;
@@ -1283,7 +1316,7 @@ body {
   width: 12px;
   height: 21px;
   background: url(../img/arrow_right_blue.png) top left no-repeat;
-  top: 50%;
+  top: 46%;
   margin-top: -10px;
   right: 20px;
   position: absolute;
