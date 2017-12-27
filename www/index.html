@@ -9,6 +9,9 @@
     <!--Libs-->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 
     <!--css-->
     <link rel="stylesheet" href="css/main.min.css">
@@ -125,20 +128,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="room ml-auto pb-1 align-top">
-                <div class="btn-hover">
-                    <a href="#" class="text-dark">
-                        Личный кабинет
-                    </a>
-                </div>
+            <div class="fix-room ml-auto pb-1 align-top mr-lg-4">
+                <a href="">
+                    <img src="img/lk2.png" alt="" class="img-fluid">
+                </a>
             </div>
-        </nav>
+            <div class="fix-logo mr-lg-2">
+                <a href="">
+                    <img src="img/logo_mini.png" alt="" class="img-fluid">
+                </a>
+            </div>
 
+        </nav>
     </div>
 </div>
 
 <!--top content-->
-<div id="top-content" class="container position-relative">
+<div id="top-content" class="container">
+
     <div class="row justify-content-between pt-4">
         <div class="col-md-3 text-center text-md-left">
             <a href=""><img src="img/logo.png" alt="" class="pl-lg-4 img-fluid"></a>
@@ -155,16 +162,33 @@
             </div>
         </div>
     </div>
+
     <div class="row">
+        <div class="col-12 px-0">
+            <div id="main_slider" class="owl-carousel">
+                <div class="main_slider_item" style="background-image: url(img/fill.jpg)">
+                    <div class="col-12 text-center block-bay">
+                        <div class="position-relative z-55 text-uppercase text-white" >
+                            <p>живописная бухта <br> хайтангбей</p>
+                            <a href="#" class="btn">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row">
         <div class="col-12 text-center block-bay">
             <div class="text-uppercase text-white ">
                 <p>живописная бухта <br> хайтангбей</p>
                 <a href="#" class="btn">Подробней</a>
             </div>
         </div>
-    </div>
-    <div class=""></div>
+    </div>-->
+
 </div>
+
 
 <!--tours-->
 <div id="tours" class="container bg-main">
@@ -177,7 +201,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active ">
                         <a href="#">
-                            <img class="d-block w-100 " src="img/image.jpg" >
+                            <img class="d-block w-100 " src="img/image.jpg">
 
                             <div class="top-title text-capitalize position-absolute">
                                 москва-хайнань
@@ -208,7 +232,7 @@
                     </div>
                     <div class="carousel-item">
                         <a href="#">
-                            <img class="d-block w-100 " src="img/image.jpg" >
+                            <img class="d-block w-100 " src="img/image.jpg">
                             <div class="top-title text-capitalize position-absolute">
                                 юрга
                             </div>
@@ -521,9 +545,10 @@
                             </div>
                             <div class="modal-body">
                                 <form class=" text-dark">
-                                    <input type="text" name="phone-number" id="phone-number"
+                                    <input type="text" name="phone-number"
                                            class="form-control w-50 mx-auto bfh-phone"
-                                           data-format="+7 (ddd) ddd-dddd">
+                                           data-format="+7 (ddd) ddd-dddd" placeholder="Телефон" required>
+
                                 </form>
                                 <span class="d-block">Введите вашь телефон</span>
                                 <input type="submit" value="Подписаться" class="btn btn-submit" data-dismiss="modal">
@@ -547,22 +572,23 @@
 </div>
 
 
-<!-- Popper -->
-
-
-
+<!--Libs-->
 <script src="libs/jquery.min.js"></script>
 <script src="libs/popper.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-formhelpers-phone.js"></script>
+<script src="old/main.js"></script>
+<script src="libs/owl.carousel/owl.carousel.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 
-<script type="text/javascript" >
+
+<script type="text/javascript">
     $(window).scroll(function () {
         if ($(this).scrollTop() > 67) {
-            $('#header-fix').css('display','block');
+            $('#header-fix').css('display', 'block');
 
         } else {
-            $('#header-fix').css('display','none');
+            $('#header-fix').css('display', 'none');
         }
     });
 </script>

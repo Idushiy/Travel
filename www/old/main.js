@@ -34,10 +34,10 @@ jQuery(document).ready(function($) {
 
 
 
-    $('.open-popup-link').magnificPopup({
+   /* $('.open-popup-link').magnificPopup({
         type:'inline',
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-    });
+    });*/
 
 
 
@@ -86,28 +86,29 @@ jQuery(document).ready(function($) {
     // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
     //   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-    $("input[name=phone_field]").mask("+7 (999) 999-99-99");
+   /* $("input[name=phone_field]").mask("+7 (999) 999-99-99");*/
 
-   /* var owl = $('#main_slider');
+
+    //main slider
+    var owl = $('#main_slider');
     owl.owlCarousel({
         items:1,
         dots:true,
         loop:true,
-        // animateOut: 'fadeOut',
+        //animateOut: 'fadeOut',
         autoplay:true,
         autoplayTimeout:4500,
         autoplayHoverPause:true
-
-
     });
 
-// Custom Navigation Events
     $(".main_slider_arrow_right").click(function() {
         owl.trigger('next.owl.carousel');
-    })
+    });
     $(".main_slider_arrow_left").click(function() {
         owl.trigger('prev.owl.carousel');
-    })*/
+    });
+
+
 
 
    /* var owl2 = $('#main_partners_slider');

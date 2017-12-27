@@ -64,6 +64,10 @@ $color-light: #edf6fa;
   z-index: 1000;
 }
 
+.z-55 {
+  z-index: 55;
+}
+
 //body
 body {
   background-image: url(../img/background.jpg);
@@ -82,8 +86,7 @@ body {
   max-width: 1173px !important;
 }
 
-
-#header-fix{
+#header-fix {
   display: none;
   & .room {
     a {
@@ -155,10 +158,24 @@ body {
 
 //top-content
 #top-content {
-  background: url(../img/fill.jpg);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  //background-image: url(../img/fill.jpg);
+  //background-position: center top;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  & .main_slider_item {
+    position: relative;
+    //min-height: 598px;
+   // height: 100%;
+    padding-top: 125px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    & .block-bay {
+     // padding: 0 0 75px 0;
+    }
+  }
   & .delimiter {
     padding: 5px 0.5px;
     margin: 10px 0;
@@ -186,7 +203,7 @@ body {
       font-size: 16.55px;
       text-transform: none;
       font-family: $gothamMedium;
-      margin-top: 45px;
+      margin-top: 75px;
 
       text-decoration: none;
       &:hover {
@@ -199,12 +216,9 @@ body {
   & .phone {
     font-size: 16px;
   }
-  & .block-bay {
-    margin-bottom: 120px;
 
-  }
   & .block-phone {
-    &>div {
+    & > div {
       font-size: 14px;
     }
     justify-content: center;
@@ -603,7 +617,7 @@ body {
       & .modal-body {
         text-align: center;
         display: block;
-        & button {
+        & .btn-submit {
           border-radius: 4px;
           width: 235px;
           height: 40px;
@@ -613,6 +627,10 @@ body {
           font-size: 12.55px;
           font-family: $gothamMedium;
           margin: 15px 0;
+        }
+        & span {
+          color: #99958d;
+          font-size: 11px;
         }
       }
     }

@@ -558,6 +558,10 @@ th {
   z-index: 1000;
 }
 
+.z-55 {
+  z-index: 55;
+}
+
 body {
   background-image: url(../img/background.jpg);
   -webkit-background-size: cover;
@@ -655,12 +659,16 @@ body {
   opacity: 0.8;
 }
 
-#top-content {
-  background: url(../img/fill.jpg);
-  background-position: center top;
+#top-content .main_slider_item {
+  position: relative;
+  padding-top: 125px;
+  background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 #top-content .delimiter {
@@ -695,7 +703,7 @@ body {
   font-size: 16.55px;
   text-transform: none;
   font-family: GothamPro-Medium, Arial, sans-serif;
-  margin-top: 45px;
+  margin-top: 75px;
   text-decoration: none;
 }
 
@@ -705,10 +713,6 @@ body {
 
 #top-content .phone {
   font-size: 16px;
-}
-
-#top-content .block-bay {
-  margin-bottom: 120px;
 }
 
 #top-content .block-phone {
@@ -1170,7 +1174,7 @@ body {
   display: block;
 }
 
-#footer .phone .modal .modal-body button {
+#footer .phone .modal .modal-body .btn-submit {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   width: 235px;
@@ -1181,6 +1185,11 @@ body {
   font-size: 12.55px;
   font-family: GothamPro-Medium, Arial, sans-serif;
   margin: 15px 0;
+}
+
+#footer .phone .modal .modal-body span {
+  color: #99958d;
+  font-size: 11px;
 }
 
 #footer .hr-btm {
