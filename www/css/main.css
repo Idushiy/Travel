@@ -1076,7 +1076,7 @@ body {
   right: 0;
 }
 
-#tours .owl-carousel .top-title {
+#tours .top-title {
   top: 30px;
   left: 25px;
   font-size: 19px;
@@ -1300,30 +1300,6 @@ body {
   position: relative;
 }
 
-.main_partners .partners_arrow_left {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_left_blue.png) top left no-repeat;
-  top: 46%;
-  margin-top: -10px;
-  left: 20px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.main_partners .partners_arrow_right {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_right_blue.png) top left no-repeat;
-  top: 46%;
-  margin-top: -10px;
-  right: 20px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 5;
-}
-
 #footer .social {
   margin-bottom: 60px;
 }
@@ -1474,11 +1450,35 @@ body {
 #footer .footer-btm {
   font-family: GothamPro-Medium, Arial, sans-serif;
   font-size: 12px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 300px) and (max-width: 992px) {
   #footer .navbar-nav {
     text-align: center;
   }
+}
+
+.main_partners .partners_arrow_left {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_left_blue.png) top left no-repeat;
+  top: 46%;
+  margin-top: -10px;
+  left: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.main_partners .partners_arrow_right {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_right_blue.png) top left no-repeat;
+  top: 46%;
+  margin-top: -10px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
 }

@@ -76,8 +76,9 @@ $color-light: #edf6fa;
 }
 
 .z-2 {
-  z-index: 3!important;
+  z-index: 3 !important;
 }
+
 //body
 body {
   background-image: url(../img/background.jpg);
@@ -97,7 +98,7 @@ body {
 }
 
 #header-fix {
-  display: none ;
+  display: none;
   @include break($xs, $md) {
     display: none !important;
   }
@@ -194,6 +195,7 @@ body {
   z-index: 99;
   margin-top: 39px;
 }
+
 /* line 995, ../sass/screen.scss */
 .city div {
   background: #FFF;
@@ -201,7 +203,7 @@ body {
   width: 100%;
   padding-left: 20px;
   height: 30px;
-  text-align:left;
+  text-align: left;
 
   line-height: 30px;
 }
@@ -221,6 +223,7 @@ body {
   z-index: 99;
   margin-top: 39px;
 }
+
 /* line 1017, ../sass/screen.scss */
 .night-drop div {
   background: #FFF;
@@ -228,11 +231,11 @@ body {
   width: 100%;
   padding-left: 20px;
   height: 30px;
-  text-align:left;
-
+  text-align: left;
 
   line-height: 30px;
 }
+
 /* line 1026, ../sass/screen.scss */
 .night-drop div:hover {
   background: #f1f1f1;
@@ -248,6 +251,7 @@ body {
   z-index: 99;
   margin-top: 39px;
 }
+
 /* line 1039, ../sass/screen.scss */
 .passagir-drop div {
   background: #FFF;
@@ -255,18 +259,19 @@ body {
   width: 100%;
   padding-left: 20px;
   height: 30px;
-  text-align:left;
+  text-align: left;
   line-height: 30px;
 }
+
 /* line 1048, ../sass/screen.scss */
 .passagir-drop div:hover {
   background: #f1f1f1;
   cursor: pointer;
 }
+
 .ui-datepicker-trigger {
   display: none;
 }
-
 
 .header_search {
   & input[type=text] {
@@ -344,28 +349,28 @@ body {
   }
 }
 
-.main_slider_arrow_left{
-  width:12px;
-  height:21px;
+.main_slider_arrow_left {
+  width: 12px;
+  height: 21px;
   background: url(../img/arrow_left-main.png) top left no-repeat;
   position: absolute;
   z-index: 5;
-  cursor:pointer;
-  top:50%;
-  left:50%;
-  margin-left:-583px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  margin-left: -583px;
 }
 
 .main_slider_arrow_right {
-  width:12px;
-  height:21px;
+  width: 12px;
+  height: 21px;
   background: url(../img/arrow_right-main.png) top left no-repeat;
   position: absolute;
   z-index: 5;
-  cursor:pointer;
-  top:50%;
-  right:50%;
-  margin-right:-583px;
+  cursor: pointer;
+  top: 50%;
+  right: 50%;
+  margin-right: -583px;
 }
 
 @media (min-width: 576px) {
@@ -560,17 +565,15 @@ body {
       }
     }
   }
-  & .owl-carousel {
-    & .top-title {
-      top: 30px;
-      left: 25px;
-      font-size: 19px;
-      color: #ffffff;
-      font-family: $gothamMedium;
-      text-align: left;
-      position: absolute;
-      text-shadow: 0 1px 3.95px rgba(0, 0, 0, 0.32);
-    }
+  & .top-title {
+    top: 30px;
+    left: 25px;
+    font-size: 19px;
+    color: #ffffff;
+    font-family: $gothamMedium;
+    text-align: left;
+    position: absolute;
+    text-shadow: 0 1px 3.95px rgba(0, 0, 0, 0.32);
   }
   & .btm-title {
     color: #ffffff;
@@ -760,32 +763,6 @@ body {
   position: relative;
 }
 
-.main_partners .partners_arrow_left {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_left_blue.png) top left no-repeat;
-  top: 46%;
-  margin-top: -10px;
-  left: 20px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 5;
-
-}
-
-.main_partners .partners_arrow_right {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_right_blue.png) top left no-repeat;
-  top: 46%;
-  margin-top: -10px;
-  right: 20px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 5;
-
-}
-
 //footer
 #footer {
   & .social {
@@ -910,11 +887,37 @@ body {
   & .footer-btm {
     font-family: $gothamMedium;
     font-size: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
   @include break($xs, $lg) {
     & .navbar-nav {
       text-align: center;
     }
   }
+}
+
+.main_partners .partners_arrow_left {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_left_blue.png) top left no-repeat;
+  top: 46%;
+  margin-top: -10px;
+  left: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+
+}
+
+.main_partners .partners_arrow_right {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_right_blue.png) top left no-repeat;
+  top: 46%;
+  margin-top: -10px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+
 }
