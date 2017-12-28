@@ -620,7 +620,7 @@ body {
       z-index: 0;
       @include break($xs, $xl) {
         max-width: 88%;
-        height: 110%;
+        height: 117%;
       }
       @include break($sm, $lg) {
         max-width: 93%;

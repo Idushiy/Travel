@@ -140,11 +140,9 @@
                     <img src="img/logo_mini.png" alt="" class="img-fluid">
                 </a>
             </div>
-
         </nav>
     </div>
 </div>
-
 
 <!--top content-->
 <div id="top-content" class="container ">
@@ -152,8 +150,11 @@
     <div class="row pt-4 justify-content-between z-4 position-absolute logo-phone">
         <div class="col-md-4 text-center text-md-left ">
             <a href=""><img src="img/ny_logo.png" alt="" class="pl-lg-4 img-fluid " style="width: 80%; margin-top: -20px"></a>
+
+
         </div>
-        <div class="col-xl-4 col-md-6 text-white d-flex block-phone pt-3 pt-md-0 px-0 mr-lg-2">
+        <div
+                class="col-xl-4 col-md-6 text-white d-md-flex d-none  block-phone pt-3 pt-md-0 px-0 mr-lg-2 text-center text-md-left">
             <div class="pr-2 pl-lg-4 pl-md-0">
                 Номер для агентств:
                 <div class="phone">8 (800)<span> 777-70-27</span></div>
@@ -191,12 +192,13 @@
             </div>
         </div>
     </div>
-    <div class="row header_search d-none d-lg-flex">
+    <div class="row header_search">
         <div class="col-12 ">
 
             <form method="get" action="[[~679]]" onsubmit="yaCounter34756620.reachGoal('NAITI-TUR');return true;">
-                <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from">
-                <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city">
+                <input type="text" placeholder="Казань" name="city" value="Казань" readonly
+                       class="name-city inp_from m-2 m-xl-0">
+                <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city m-2 m-xl-0">
                 <div class="city" id="city">
                     <div data-id="170">Барнаул</div>
                     <div data-id="269">Благовещенск</div>
@@ -219,29 +221,19 @@
                     <div data-id="1077">Челябинск</div>
                     <div data-id="1088">Чита</div>
 
-                    <!--<div >Москва</div>
-                    <div >Благовещенск</div>
-                    <div >Владивосток</div>
-                    <div >Новосибирск</div>
-                    <div >Кемерово</div>
-                    <div >Красноярск</div>
-                    <div >Хабаровск</div>
-                    <div >Иркутск</div>
-                    <div >Санкт-Петербург</div>
-                    <div >Казань</div>
-                    <div >Уфа</div>
-                    <div >Екатеринбург</div>-->
                 </div>
-                <input type="text" value="Китай" readonly class="inp_where">
-                <input type="text" class="inp_begin" id="datepicker" placeholder="Начало тура">
-                <input type="text" id="night" name="night" class="inp_night" readonly placeholder="Ночей до" value="Ночей до">
+                <input type="text" value="Китай" readonly class="inp_where m-2 m-xl-0">
+                <input type="text" class="inp_begin m-2 m-xl-0" id="datepicker" placeholder="Начало тура">
+                <input type="text" id="night" name="night" class="inp_night m-2 m-xl-0" readonly placeholder="Ночей до"
+                       value="Ночей до">
                 <div class="night-drop" id="night-drop">
 
                     <div>7</div>
                     <div>14</div>
                     <div>21</div>
                 </div>
-                <input type="text" id="passagir" name="passagir" class="inp_kol" readonly placeholder="2 Пассажира" value="2 Пассажира">
+                <input type="text" id="passagir" name="passagir" class="inp_kol m-2 m-xl-0" readonly placeholder="2 Пассажира"
+                       value="2 Пассажира">
                 <div class="passagir-drop" id="passagir-drop">
                     <div>1 Пассажир</div>
                     <div>2 Пассажира</div>
@@ -250,7 +242,7 @@
 
                 </div>
 
-                <input type="submit" value="Найти тур">
+                <input type="submit" value="Найти тур" class="m-2 m-xl-0">
                 <div class="clear"></div>
             </form>
         </div>
@@ -313,10 +305,10 @@
                         </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev d-none d-md-flex" href="#myCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev d-none d-lg-flex" href="#myCarousel" role="button" data-slide="prev">
                     <span class="" aria-hidden="true"></span>
                 </a>
-                <a class="carousel-control-next d-none d-md-flex" href="#myCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next d-none d-lg-flex" href="#myCarousel" role="button" data-slide="next">
                     <span class="" aria-hidden="true"></span>
                 </a>
             </div>
@@ -496,8 +488,8 @@
 <div id="ad" class="main_partners container bg-main">
     <div class="container">
         <div class="row pt-5 main_partners_block">
-            <div class="partners_arrow_left"></div>
-            <div class="partners_arrow_right"></div>
+            <div class="partners_arrow_left d-none d-lg-block"></div>
+            <div class="partners_arrow_right d-none d-lg-block"></div>
             <div id="main_partners_slider" class="owl-carousel pl-5 pr-4">
                 <div class="main_partners_item">
                     <img src="img/part-1.jpg" alt="" class="img-fluid">
@@ -519,7 +511,7 @@
         </div>
     </div>
 </div>
-
+ 
 <!--footer-->
 <div id="footer" class="pt-5 text-white">
     <div class="container ">
@@ -529,7 +521,7 @@
                 <div class="pr-lg-4">
                     <div class="footer-logo pb-4">
                         <a href="#">
-                            <img src="img/logo.png" alt="">
+                            <img src="img/ny_logo.png" alt="" class="img-fluid">
                         </a>
                     </div>
                     <hr class="bg-white">
@@ -644,12 +636,9 @@
 <script src="libs/jquery.min.js"></script>
 <script src="libs/popper.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-<!--<script src="libs/bootstrap-formhelpers-phone.js"></script>-->
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 <script src="libs/jquery-ui.js"></script>
-
-
 <script src="libs/jquery.maskedinput.js"></script>
 
 <!--Scripts-->
