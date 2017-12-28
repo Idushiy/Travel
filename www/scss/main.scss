@@ -99,7 +99,7 @@ body {
 
 #header-fix {
   display: none;
-  @include break($xs, $md) {
+  @include break($xs, $lg) {
     display: none !important;
   }
   & .room {
@@ -112,6 +112,11 @@ body {
 
 //header
 #header, #header-fix {
+  & nav {
+    @include break($xs, $sm) {
+      justify-content: center;
+    }
+  }
   & #nav-content, #nav-content-fix {
     font-size: 16px;
     @include break($xs, $md) {
@@ -168,232 +173,20 @@ body {
   & .btn-hover:hover {
     opacity: 0.8;
   }
-}
+  & .navbar-nav {
+    ul {
+      @include break($xs, $sm) {
+        left: 40px;
 
-//header search
+      }
+      & a {
+        @include break($xs, $lg) {
+          font-size: 16px !important;
 
-.ui-datepicker-trigger {
-  display: none;
-}
+        }
+      }
 
-.header_search {
-  padding-top: 25px;
-  padding-bottom: 22px;
-  background: rgba(0, 0, 0, 0.1);
-  margin-top: -91px;
-  position: relative;
-  z-index: 5;
-
-}
-
-//header search
-
-.city {
-  position: absolute;
-  display: none;
-  width: 171px;
-  z-index: 99;
-  margin-top: 39px;
-}
-
-/* line 995, ../sass/screen.scss */
-.city div {
-  background: #FFF;
-  font-size: 16px;
-  width: 100%;
-  padding-left: 20px;
-  height: 30px;
-  text-align: left;
-
-  line-height: 30px;
-}
-
-/* line 1004, ../sass/screen.scss */
-.city div:hover {
-  background: #f1f1f1;
-  cursor: pointer;
-}
-
-/* line 1010, ../sass/screen.scss */
-.night-drop {
-  position: absolute;
-  right: calc(50% - 177px);
-  display: none;
-  width: 171px;
-  z-index: 99;
-  margin-top: 39px;
-}
-
-/* line 1017, ../sass/screen.scss */
-.night-drop div {
-  background: #FFF;
-  font-size: 16px;
-  width: 100%;
-  padding-left: 20px;
-  height: 30px;
-  text-align: left;
-
-  line-height: 30px;
-}
-
-/* line 1026, ../sass/screen.scss */
-.night-drop div:hover {
-  background: #f1f1f1;
-  cursor: pointer;
-}
-
-/* line 1032, ../sass/screen.scss */
-.passagir-drop {
-  position: absolute;
-  right: calc(33% - 174px);
-  display: none;
-  width: 171px;
-  z-index: 99;
-  margin-top: 39px;
-}
-
-/* line 1039, ../sass/screen.scss */
-.passagir-drop div {
-  background: #FFF;
-  font-size: 16px;
-  width: 100%;
-  padding-left: 20px;
-  height: 30px;
-  text-align: left;
-  line-height: 30px;
-}
-
-/* line 1048, ../sass/screen.scss */
-.passagir-drop div:hover {
-  background: #f1f1f1;
-  cursor: pointer;
-}
-
-.ui-datepicker-trigger {
-  display: none;
-}
-
-.header_search {
-  & input[type=text] {
-    display: inline-block;
-    height: 43px;
-    width: 191px;
-    box-sizing: border-box;
-    border: none;
-    line-height: 43px;
-    float: left;
-    margin-right: 1px;
-    padding-left: 37px;
-  }
-
-  & ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #6f6f6f;
-
-    font-size: 14px;
-  }
-
-  & ::-moz-placeholder { /* Firefox 19+ */
-    color: #6f6f6f;
-
-    font-size: 14px;
-  }
-
-  & :-ms-input-placeholder { /* IE 10+ */
-    color: #6f6f6f;
-
-    font-size: 14px;
-  }
-
-  & :-moz-placeholder { /* Firefox 18- */
-    color: #6f6f6f;
-
-    font-size: 14px;
-  }
-
-  & input[type=text].inp_from {
-    background: url(../img/plane.png) 12px 14px no-repeat #ffffff;
-    border-radius: 5px 0px 0px 5px;
-  }
-
-  & input[type=text].inp_where {
-    background: url(../img/place.png) 12px 14px no-repeat #ffffff;
-  }
-
-  & input[type=text].inp_begin {
-    background: url(../img/cal.png) 12px 14px no-repeat #ffffff;
-  }
-
-  & input[type=text].inp_night {
-    background: url(../img/night.png) 12px 14px no-repeat #ffffff;
-  }
-
-  & input[type=text].inp_kol {
-    background: url(../img/users.png) 12px 14px no-repeat #ffffff;
-  }
-
-  & input[type=submit] {
-    background: url(../img/lupe.png) 12px 14px no-repeat #fac338;
-    width: 173px;
-    text-align: left;
-    height: 43px;
-    line-height: 43px;
-    font-size: 15px;
-    font-family: $gothamMedium;
-    color: #ffffff;
-    border-radius: 0 5px 5px 0;
-    border: none;
-    box-sizing: border-box;
-    padding-left: 68px;
-    float: left;
-    cursor: pointer;
-  }
-}
-
-.main_slider_arrow_left {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_left-main.png) top left no-repeat;
-  position: absolute;
-  z-index: 5;
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  margin-left: -583px;
-}
-
-.main_slider_arrow_right {
-  width: 12px;
-  height: 21px;
-  background: url(../img/arrow_right-main.png) top left no-repeat;
-  position: absolute;
-  z-index: 5;
-  cursor: pointer;
-  top: 50%;
-  right: 50%;
-  margin-right: -583px;
-}
-
-@media (min-width: 576px) {
-  .logo-phone {
-    width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo-phone {
-    width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .logo-phone {
-    width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .logo-phone {
-    max-width: 1175px;
+    }
   }
 }
 
@@ -412,7 +205,18 @@ body {
   }
   & .logo-phone {
     @include break($xl) {
-      min-width: 1175px;
+      max-width: 1175px;
+
+    }
+    @include break($xs, $xl) {
+      width: 100%;
+
+    }
+    & img {
+      @include break($sm, $md) {
+        width: 50% !important;
+
+      }
     }
   }
   & .delimiter {
@@ -550,9 +354,14 @@ body {
         z-index: 23;
         left: 0;
         cursor: pointer;
+
+        @include break($xs, $md) {
+          height: 50px;
+          width: 30px;
+        }
       }
     }
-    & .carousel-control-next {
+    & .carousel-control-next { 
       & span {
         position: absolute;
         top: 50%;
@@ -561,7 +370,10 @@ body {
         width: 45px;
         background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
         right: 0;
-
+        @include break($xs, $md) {
+          height: 50px;
+          width: 30px;
+        }
       }
     }
   }
@@ -620,7 +432,7 @@ body {
       z-index: 0;
       @include break($xs, $xl) {
         max-width: 88%;
-        height: 117%;
+        height: 118%;
       }
       @include break($sm, $lg) {
         max-width: 93%;
@@ -921,3 +733,242 @@ body {
   z-index: 5;
 
 }
+
+//header search
+
+.ui-datepicker-trigger {
+  display: none;
+}
+
+.header_search {
+  & form {
+    @include break($xs, $lg) {
+      text-align: center;
+    }
+  }
+  padding-top: 25px;
+  padding-bottom: 22px;
+  background: rgba(0, 0, 0, 0.1);
+  @include break($lg) {
+    margin-top: -91px;
+  }
+  position: relative;
+  z-index: 5;
+
+}
+
+//header search
+
+.city {
+  position: absolute;
+  display: none;
+  width: 171px;
+  z-index: 99;
+  margin-top: 39px;
+  @include break($xs, $lg) {
+    margin-top: 0;
+    margin-left: 23px;
+  }
+}
+
+#ui-datepicker-div {
+  @include break($xs, $lg) {
+    left: 31px !important;
+  }
+}
+
+/* line 995, ../sass/screen.scss */
+.city div {
+  background: #FFF;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 20px;
+  height: 30px;
+  text-align: left;
+
+  line-height: 30px;
+}
+
+/* line 1004, ../sass/screen.scss */
+.city div:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+/* line 1010, ../sass/screen.scss */
+.night-drop {
+  position: absolute;
+  right: calc(50% - 177px);
+  display: none;
+  width: 171px;
+  z-index: 99;
+  margin-top: 39px;
+  @include break($xs, $lg) {
+    right: calc(50% - 84px);
+    margin-top: -5px;
+  }
+}
+
+/* line 1017, ../sass/screen.scss */
+.night-drop div {
+  background: #FFF;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 20px;
+  height: 30px;
+  text-align: left;
+
+  line-height: 30px;
+
+}
+
+/* line 1026, ../sass/screen.scss */
+.night-drop div:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+/* line 1032, ../sass/screen.scss */
+.passagir-drop {
+  position: absolute;
+  right: calc(33% - 174px);
+  display: none;
+  width: 171px;
+  z-index: 99;
+  margin-top: 39px;
+  @include break($xs, $lg) {
+    right: calc(77% - 174px);
+    margin-top: 0px;
+  }
+}
+
+/* line 1039, ../sass/screen.scss */
+.passagir-drop div {
+  background: #FFF;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 20px;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* line 1048, ../sass/screen.scss */
+.passagir-drop div:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.ui-datepicker-trigger {
+  display: none;
+}
+
+.header_search {
+  & input[type=text] {
+    display: inline-block;
+    height: 43px;
+    width: 191px;
+    box-sizing: border-box;
+    border: none;
+    line-height: 43px;
+    @include break($lg) {
+      float: left;
+    }
+
+    margin-right: 1px;
+    padding-left: 37px;
+  }
+
+  & ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #6f6f6f;
+
+    font-size: 14px;
+  }
+
+  & ::-moz-placeholder { /* Firefox 19+ */
+    color: #6f6f6f;
+
+    font-size: 14px;
+  }
+
+  & :-ms-input-placeholder { /* IE 10+ */
+    color: #6f6f6f;
+
+    font-size: 14px;
+  }
+
+  & :-moz-placeholder { /* Firefox 18- */
+    color: #6f6f6f;
+
+    font-size: 14px;
+  }
+
+  & input[type=text].inp_from {
+    background: url(../img/plane.png) 12px 14px no-repeat #ffffff;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  & input[type=text].inp_where {
+    background: url(../img/place.png) 12px 14px no-repeat #ffffff;
+  }
+
+  & input[type=text].inp_begin {
+    background: url(../img/cal.png) 12px 14px no-repeat #ffffff;
+  }
+
+  & input[type=text].inp_night {
+    background: url(../img/night.png) 12px 14px no-repeat #ffffff;
+  }
+
+  & input[type=text].inp_kol {
+    background: url(../img/users.png) 12px 14px no-repeat #ffffff;
+  }
+
+  & input[type=submit] {
+    background: url(../img/lupe.png) 12px 14px no-repeat #fac338;
+    width: 173px;
+    @include break($xs, $lg) {
+      width: 191px;
+    }
+    text-align: left;
+    height: 43px;
+    line-height: 43px;
+    font-size: 15px;
+    font-family: $gothamMedium;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 68px;
+    @include break($lg) {
+      float: left;
+    }
+
+    cursor: pointer;
+  }
+}
+
+.main_slider_arrow_left {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_left-main.png) top left no-repeat;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  margin-left: -583px;
+}
+
+.main_slider_arrow_right {
+  width: 12px;
+  height: 21px;
+  background: url(../img/arrow_right-main.png) top left no-repeat;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  top: 50%;
+  right: 50%;
+  margin-right: -583px;
+}
+

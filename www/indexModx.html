@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -27,7 +27,7 @@
 <div id="header">
     <div class="container col-3">
 
-        <nav class="navbar navbar-expand-sm navbar-dark px-0">
+        <nav class="navbar navbar-expand-sm navbar-dark px-0 text-center text-sm-left">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="nav-content">
                 <ul class="navbar-nav">
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-white" href="[[~2]]">о комании</a>
+                        <a class="nav-link text-capitalize text-white" href="[[~2]]">O компании</a>
                         [[pdoMenu?
                         &parents=`2`
                         &level=`1`
@@ -44,7 +44,7 @@
                     ]]
                     </li>
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-white" href="[[~4]]">агенствам</a>
+                        <a class="nav-link text-capitalize text-white" href="[[~4]]">Агенствам</a>
                         [[pdoMenu?
                         &parents=`4`
                         &level=`1`
@@ -53,7 +53,7 @@
                     ]]
                     </li>
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-white" href="[[~3]]">китай</a>
+                        <a class="nav-link text-capitalize text-white" href="[[~3]]">Китай</a>
                         [[pdoMenu?
                         &parents=`3`
                         &level=`1`
@@ -61,9 +61,12 @@
                         &tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
                     ]]
                     </li>
+                    <li class="nav-item pr-2 d-sm-none d-block">
+                        <a class="nav-link text-capitalize text-white" href="[[~36]]">Личный кабинет</a>
+                    </li>
                 </ul>
             </div>
-            <div class="room ml-auto pb-1 align-top">
+            <div class="room ml-auto pb-1 align-top d-none d-sm-block">
                 <div class="btn-hover">
                     <a href="[[~36]]" class="text-white">
                         Личный кабинет
@@ -86,7 +89,7 @@
             <div class="collapse navbar-collapse" id="nav-content-fix">
                 <ul class="navbar-nav">
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-dark" href="[[~2]]">о комании</a>
+                        <a class="nav-link text-capitalize text-dark" href="[[~2]]">О компании</a>
                         [[pdoMenu?
                         &parents=`2`
                         &level=`1`
@@ -95,7 +98,7 @@
                     ]]
                     </li>
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-dark" href="[[~4]]">агенствам</a>
+                        <a class="nav-link text-capitalize text-dark" href="[[~4]]">Агенствам</a>
                         [[pdoMenu?
                         &parents=`4`
                         &level=`1`
@@ -104,7 +107,7 @@
                     ]]
                     </li>
                     <li class="nav-item pr-2">
-                        <a class="nav-link text-capitalize text-dark" href="[[~3]]">китай</a>
+                        <a class="nav-link text-capitalize text-dark" href="[[~3]]">Китай</a>
                         [[pdoMenu?
                         &parents=`3`
                         &level=`1`
@@ -119,9 +122,9 @@
                     <img src="assets/img/home/lk2.png" alt="" class="img-fluid">
                 </a>
             </div>
-            <div class="fix-logo mr-lg-2 ">
+            <div class="fix-logo mr-lg-2" style="width: 15%;">
                 <a href=/"">
-                    <img src="assets/img/home/logo_mini.png" alt="" class="img-fluid">
+                    <img src="assets/img/ny_mini_logo.png" alt="" class="img-fluid">
                 </a>
             </div>
         </nav>
@@ -134,7 +137,7 @@
 
     <div class="row pt-4 justify-content-between z-4 position-absolute logo-phone">
         <div class="col-md-4 text-center text-md-left ">
-            <a href="/"><img src="assets/img/home/logo.png" alt="" class="pl-lg-4 img-fluid" ></a>
+            <a href="/"><img src="assets/img/ny_logo.png" alt="" class="pl-lg-4 img-fluid" style="width: 75%; margin-top: -15px;"></a>
         </div>
         <div
                 class="col-xl-4 col-md-6 text-white d-md-flex d-none  block-phone pt-3 pt-md-0 px-0 mr-lg-2 text-center text-md-left">
@@ -145,7 +148,7 @@
             <span class="delimiter bg-main"></span>
             <div class="pl-2">
                 Номер для туристов:
-                <div class="phone">+7 (499)<span> 133-90-83</span></div>
+                <div class="phone">+7 (495)<span> 133-90-83</span></div>
             </div>
         </div>
     </div>
@@ -159,16 +162,53 @@
                 <div class="main_slider_item" style="background-image: url(assets/img/home/fill.jpg)">
                     <div class="col-12 text-center block-bay">
                         <div class=" text-uppercase text-white">
-                            <p>живописная бухта <br> хайтангбей</p>
+                            <p>Живописная бухта <br> хайтангбей</p>
                             <a href="http://prtc.travel/kitaj/oteli/buxta-xajtangbej/" class="btn">Подробней</a>
                         </div>
                     </div>
                 </div>
-                <div class="main_slider_item" style="background-image: url(assets/img/home/fill.jpg)">
+                <div class="main_slider_item" style="background-image: url(/image/slider/хайкоу.png)">
                     <div class="col-12 text-center block-bay">
                         <div class=" text-uppercase text-white">
-                            <p>живописная бухта <br> хайтангбей</p>
-                            <a href="http://prtc.travel/kitaj/oteli/buxta-xajtangbej/" class="btn">Подробней</a>
+                            <p>Популярная бухта <br> Ялунвань</p>
+                            <a href="http://prtc.travel/kitaj/oteli/buxta-yalunvan/" class="btn">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_slider_item" style="background-image: url(/image/slider/banner-hollywood.png)">
+                    <div class="col-12 text-center block-bay">
+                        <div class=" text-uppercase text-white">
+                            <p>ПРЯМЫЕ РЕЙСЫ  <br> В ГОЛЛИВУД<br> <h4 class="">Cтарт акции</h4></p>
+
+                            <a href="[[~872]]" class="btn mt-3">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_slider_item" style="background-image: url(/image/slider/banner-rannee-bron1.png)">
+                    <div class="col-12 text-center block-bay">
+                        <div class=" text-uppercase text-white">
+                            <p>Раннее бронирование</p>
+
+                            <a href="http://prtc.travel/o-kompanii/akczii/rannee-bronirovanie.html" class="btn">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_slider_item" style="background-image: url(/image/slider/trop-yalunvan.png)">
+                    <div class="col-12 text-center block-bay">
+                        <div class=" text-uppercase text-white">
+                            <p>Тропический лес <br> залива Ялунвань</p>
+
+                            <a href="[[~633]]" class="btn">Подробней</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_slider_item" style="background-image: url(/image/slider/romancepark.png)">
+                    <div class="col-12 text-center block-bay">
+                        <div class=" text-white">
+                            <p class="text-uppercase">История и современность <br>в Romance Park</p>
+                            <h4 class="">экскурсии на о.Хайнань</h4>
+                            <a href="[[~634]]" class="btn mt-3">Подробней</a>
                         </div>
                     </div>
                 </div>
@@ -179,8 +219,8 @@
         <div class="col-12 ">
 
             <form method="get" action="[[~679]]" onsubmit="yaCounter34756620.reachGoal('NAITI-TUR');return true;">
-                <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from m-2 m-lg-0">
-                <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city m-2 m-lg-0">
+                <input type="text" placeholder="Казань" name="city" value="Казань" readonly class="name-city inp_from m-2 m-xl-0">
+                <input type="hidden" name="TOWNFROMINC" value="128" readonly class="id-city m-2 m-xl-0">
                 <div class="city" id="city">
                     <div data-id="170">Барнаул</div>
                     <div data-id="269">Благовещенск</div>
@@ -205,16 +245,16 @@
 
 
                 </div>
-                <input type="text" value="Китай" readonly class="inp_where m-2 m-lg-0">
-                <input type="text" class="inp_begin m-2 m-lg-0" id="datepicker" placeholder="Начало тура">
-                <input type="text" id="night" name="night" class="inp_night m-2 m-lg-0" readonly placeholder="Ночей до" value="Ночей до">
+                <input type="text" value="Китай" readonly class="inp_where m-2 m-xl-0">
+                <input type="text" class="inp_begin m-2 m-xl-0" id="datepicker" placeholder="Начало тура">
+                <input type="text" id="night" name="night" class="inp_night m-2 m-xl-0" readonly placeholder="Ночей до" value="Ночей до">
                 <div class="night-drop" id="night-drop">
 
                     <div>7</div>
                     <div>14</div>
                     <div>21</div>
                 </div>
-                <input type="text" id="passagir" name="passagir" class="inp_kol m-2 m-lg-0" readonly placeholder="2 Пассажира" value="2 Пассажира">
+                <input type="text" id="passagir" name="passagir" class="inp_kol m-2 m-xl-0" readonly placeholder="2 Пассажира" value="2 Пассажира">
                 <div class="passagir-drop" id="passagir-drop">
                     <div>1 Пассажир</div>
                     <div>2 Пассажира</div>
@@ -223,7 +263,7 @@
 
                 </div>
 
-                <input type="submit" value="Найти тур" class="m-2 m-lg-0">
+                <input type="submit" value="Найти тур" class="m-2 m-xl-0">
                 <div class="clear"></div>
             </form>
         </div>
@@ -235,7 +275,7 @@
 <div id="tours" class="container bg-main">
     <div class="row">
         <div class="col-12 pt-2 pb-1">
-            <h6 class="spec">Спецпредложение на ближайщие даты</h6>
+            <h6 class="spec">Спецпредложения на ближайшие даты</h6>
         </div>
         <div class="col-lg-6 block-carousel  pr-lg-0 pb-4 pb-lg-1">
             <div id="myCarousel" class="carousel slide bg-inverse ml-auto mr-auto" data-ride="carousel">
@@ -303,10 +343,10 @@
                         </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev d-none d-lg-flex" href="#myCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev " href="#myCarousel" role="button" data-slide="prev">
                     <span class="" aria-hidden="true"></span>
                 </a>
-                <a class="carousel-control-next d-none d-lg-flex" href="#myCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                     <span class="" aria-hidden="true"></span>
                 </a>
             </div>
@@ -343,8 +383,8 @@
             <img src="assets/img/home/form_bg.png" alt="" class="img-fluid">
             <div class="row pb-4 text-center text-lg-left">
                 <div class="col-lg-8 ">
-                    <h6 class="text-uppercase pl-lg-5">узнайте первым о наших турах</h6>
-                    <p class="text-capitalize pl-lg-3">* нажимая кнопку "подписаться" я приманию пользовательское соглашение</p>
+                    <h6 class="text-uppercase pl-lg-5">Узнайте первым о наших турах</h6>
+                    <p class=" pl-lg-3">* Нажимая кнопку "подписаться", я принимаю Пользовательское Соглашение</p>
                 </div>
                 <div class="col-lg-4 pl-lg-0 pl-xl-4">
                     <form class="pl-xl-3">
@@ -364,82 +404,20 @@
 <div id="news" class="container bg-main">
     <div class="row">
         <div class="col-12 title-news pb-3">
-            <h6 class="text-uppercase text-center text-lg-left">новости</h6>
+            <h6 class="text-uppercase text-center text-lg-left">Новости</h6>
         </div>
         <div class="container block-news">
             <div class="row text-center text-lg-left">
-                <div class="col-lg-3 pb-4 pb-lg-0">
-                    <a href="#" class="">
-                        <img src="assets/img/home/1.jpg" alt="" class="img-fluid">
-                    </a>
-                    <div class="">
-                        <a href="#">
-                            <h6 class="text-capitalize">
-                                Старт продаж на о. Хайнань с вылетами из Тюмени
-                            </h6>
-                        </a>
-                        <p class="text-capitalize">
-                            Прекрасная новость для жителей города Тюмень! Стартуют продажи
-                        </p>
-                        <a href="#" class="btn">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 pb-4 pb-lg-0">
-                    <a href="#" class="">
-                        <img src="assets/img/home/2.jpg" alt="" class="img-fluid">
-                    </a>
-                    <div class="">
-                        <a href="#">
-                            <h6 class="text-capitalize">
-                                Старт продаж на о. Хайнань с вылетами из Тюмени
-                            </h6>
-                        </a>
-                        <p class="text-capitalize">
-                            Прекрасная новость для жителей города Тюмень! Стартуют продажи
-                        </p>
-                        <a href="#" class="btn">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 pb-4 pb-lg-0">
-                    <a href="#" class="">
-                        <img src="assets/img/home/3.jpg" alt="" class="img-fluid">
-                    </a>
-                    <div class="">
-                        <a href="#">
-                            <h6 class="text-capitalize">
-                                Старт продаж на о. Хайнань с вылетами из Тюмени
-                            </h6>
-                        </a>
-                        <p class="text-capitalize">
-                            Прекрасная новость для жителей города Тюмень! Стартуют продажи
-                        </p>
-                        <a href="#" class="btn">
-                            Читать
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 pb-4 pb-lg-0">
-                    <a href="#" class="">
-                        <img src="assets/img/home/4.jpg" alt="" class="img-fluid">
-                    </a>
-                    <div class="">
-                        <a href="#">
-                            <h6 class="text-capitalize">
-                                Старт продаж на о. Хайнань с вылетами из Тюмени
-                            </h6>
-                        </a>
-                        <p class="text-capitalize">
-                            Прекрасная новость для жителей города Тюмень! Стартуют продажи
-                        </p>
-                        <a href="#" class="btn">
-                            Читать
-                        </a>
-                    </div>
-                </div>
+
+                [[pdoResources?
+                &parents=`153`
+                &depth=`0`
+                &tpl=`new_tpl.allnews`
+                &sortdir=`DESC`
+                &limit=`4`
+                &includeTVs=`image`
+                ]]
+
             </div>
         </div>
 
@@ -450,7 +428,7 @@
 <div id="medals" class="container ">
     <div class="row">
         <div class="col-12 title-medals py-5">
-            <h6 class="text-uppercase text-center">наши награды</h6>
+            <h6 class="text-uppercase text-center">Наши награды</h6>
         </div>
         <div class="container">
             <div class="row no-gutters pb-5">
@@ -536,13 +514,13 @@
 <!--footer-->
 <div id="footer" class="pt-5 text-white">
     <div class="container ">
-        <div class="row pb-5">
+        <div class="row">
 
             <div class="col-lg-3 logo pr-lg-2">
                 <div class="pr-lg-4">
                     <div class="footer-logo pb-4">
                         <a href="/">
-                            <img src="assets/img/home/logo.png" alt="">
+                            <img src="assets/img/ny_logo.png" class="img-fluid" >
                         </a>
                     </div>
                     <hr class="bg-white">

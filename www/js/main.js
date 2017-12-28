@@ -111,9 +111,18 @@ jQuery(document).ready(function($) {
 
 
 
+    function numberSlider() {
+        var size = window.innerWidth;
+        if (size >= 1200) {
+            return 4
+        } else {
+            return 2
+        }
+    }
+
    var owl2 = $('#main_partners_slider');
     owl2.owlCarousel({
-        items:5,
+        items: numberSlider() ,
         loop:true,
         autoplay:true,
         autoplayTimeout:4500,
