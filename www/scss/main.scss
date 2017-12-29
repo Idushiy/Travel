@@ -64,7 +64,7 @@ $color-light: #edf6fa;
 }
 
 .z-1000 {
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .z-55 {
@@ -412,7 +412,7 @@ body {
     }
   }
   & .price {
-    @include break($xs, $md) { 
+    @include break($xs, $md) {
       height: 50px;
       width: 110px;
 
@@ -627,7 +627,6 @@ body {
         margin-bottom: 15px;
       }
       & a {
-        text-transform: capitalize;
         color: #fff;
       }
     }

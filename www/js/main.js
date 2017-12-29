@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
     // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
     //   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-   $("input[name=phone_field]").mask("+7 (999) 999-99-99");
+   /*$("input[name=phone_field]").mask("+7 (999) 999-99-99");*/
 
 
     //main slider
