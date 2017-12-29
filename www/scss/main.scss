@@ -64,7 +64,7 @@ $color-light: #edf6fa;
 }
 
 .z-1000 {
-  z-index: 1000;
+  z-index: 1000; 
 }
 
 .z-55 {
@@ -99,7 +99,7 @@ body {
 
 #header-fix {
   display: none;
-  @include break($xs, $lg) {
+  @include break($xs, $xl) {
     display: none !important;
   }
   & .room {
@@ -208,6 +208,10 @@ body {
       max-width: 1175px;
 
     }
+    @include break($xs,$lg) {
+      position: relative !important;
+
+    }
     @include break($xs, $xl) {
       width: 100%;
 
@@ -232,7 +236,7 @@ body {
     font-stretch: extra-condensed;
     text-shadow: 0 1px 3.95px rgba(0, 0, 0, 0.22);
     @include break($xs, $md) {
-      font-size: 35px;
+      font-size: 28px;
     }
   }
   & .block-bay {
@@ -271,6 +275,11 @@ body {
       & .phone {
         font-size: 14px;
       }
+    }
+    @include break($xs, $md) {
+      font-size: 13px;
+      padding-bottom: 20px;
+      display: block;
     }
   }
 }
@@ -361,7 +370,7 @@ body {
         }
       }
     }
-    & .carousel-control-next { 
+    & .carousel-control-next {
       & span {
         position: absolute;
         top: 50%;
@@ -380,6 +389,9 @@ body {
   & .top-title {
     top: 30px;
     left: 25px;
+    @include break($xs, $md) {
+      font-size: 13px;
+    }
     font-size: 19px;
     color: #ffffff;
     font-family: $gothamMedium;
@@ -396,12 +408,11 @@ body {
     left: 0;
     padding: 5px 20px;
     @include break($xs, $md) {
-
-      font-size: 11px;
+      font-size: 9px;
     }
   }
   & .price {
-    @include break($xs, $md) {
+    @include break($xs, $md) { 
       height: 50px;
       width: 110px;
 
@@ -464,7 +475,7 @@ body {
     & input {
       font-size: 14px;
     }
-    & button {
+    & .btn {
       background: $color-yellow;
       font-family: $gothamMedium;
       font-size: 15px;
@@ -749,7 +760,7 @@ body {
   padding-top: 25px;
   padding-bottom: 22px;
   background: rgba(0, 0, 0, 0.1);
-  @include break($lg) {
+  @include break($xl) {
     margin-top: -91px;
   }
   position: relative;

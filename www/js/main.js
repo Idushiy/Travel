@@ -114,10 +114,11 @@ jQuery(document).ready(function($) {
     function numberSlider() {
         var size = window.innerWidth;
         if (size >= 1200) {
-            return 4
+            return 5
         } else {
-            return 2
+            return 3
         }
+
     }
 
    var owl2 = $('#main_partners_slider');
@@ -205,6 +206,7 @@ jQuery(document).ready(function($) {
         }
         return false;
     });
+
     $("#form_call").submit(function(){
         var form = $(this);
         var error = false;

@@ -398,17 +398,17 @@ th {
 
 @font-face {
   font-family: 'GothamPro';
-  src: url("../fonts/GothamPro/GothamPro.eot?") format("eot"), url("../fonts/GothamPro/GothamPro.otf") format("opentype"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro/GothamPro.svg#GothamPro") format("svg");
+  src: url("../../../fonts/home/home/GothamPro/GothamPro.eot?") format("eot"), url("../../../fonts/home/home/GothamPro/GothamPro.otf") format("opentype"), url("../../../fonts/home/home/GothamPro/GothamPro.woff") format("woff"), url("../../fonts/home/GothamPro/GothamPro.ttf") format("truetype"), url("../../fonts/home/GothamPro/GothamPro.svg#GothamPro") format("svg");
 }
 
 @font-face {
   font-family: 'GothamPro-Medium';
-  src: url("../fonts/GothamPro-Medium/GothamPro-Medium.eot?") format("eot"), url("../fonts/GothamPro-Medium/GothamPro-Medium.otf") format("opentype"), url("../fonts/GothamPro-Medium/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
+  src: url("../../fonts/home/GothamPro-Medium/GothamPro-Medium.eot?") format("eot"), url("../../fonts/home/GothamPro-Medium/GothamPro-Medium.otf") format("opentype"), url("../../fonts/home/GothamPro-Medium/GothamPro-Medium.woff") format("woff"), url("../../fonts/home/GothamPro-Medium/GothamPro-Medium.ttf") format("truetype"), url("../../fonts/home/GothamPro-Medium/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
 }
 
 @font-face {
   font-family: 'GothamPro-Light';
-  src: url("../fonts/GothamPro-Light/GothamPro-Light.eot?") format("eot"), url("../fonts/GothamPro-Light/GothamPro-Light.otf") format("opentype"), url("../fonts/GothamPro-Light/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light/GothamPro-Light.svg#GothamPro-Light") format("svg");
+  src: url("../../fonts/home/GothamPro-Light/GothamPro-Light.eot?") format("eot"), url("../../fonts/home/GothamPro-Light/GothamPro-Light.otf") format("opentype"), url("../../fonts/home/GothamPro-Light/GothamPro-Light.woff") format("woff"), url("../../fonts/home/GothamPro-Light/GothamPro-Light.ttf") format("truetype"), url("../../fonts/home/GothamPro-Light/GothamPro-Light.svg#GothamPro-Light") format("svg");
 }
 
 .col-xs-5th,
@@ -571,7 +571,7 @@ th {
 }
 
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../../img/home/background.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
@@ -597,7 +597,7 @@ body {
 }
 
 #header-fix .room a {
-  background: url(../img/lk.png) 16px 11px no-repeat;
+  background: url(../../img/home/lk.png) 16px 11px no-repeat;
   border: 1px solid #343434 !important;
 }
 
@@ -654,7 +654,7 @@ body {
 }
 
 #header .room a, #header-fix .room a {
-  background: url(../img/lk.png) 16px 11px no-repeat;
+  background: url(../../img/home/lk.png) 16px 11px no-repeat;
   display: block;
   width: 200px;
   height: 43px;
@@ -747,7 +747,7 @@ body {
 
 @media (min-width: 300px) and (max-width: 768px) {
   #top-content p, #top-slider p {
-    font-size: 28px;
+    font-size: 35px;
   }
 }
 
@@ -848,7 +848,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 3;
-  background: url(../img/img123.png) top left repeat-y;
+  background: url(../../img/home/img123.png) top left repeat-y;
   left: 0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -866,15 +866,15 @@ body {
 }
 
 #tours .block-travel .block-tour {
-  background: url(../img/img3.jpg) right;
+  background: url(../../img/home/img3.jpg) right;
 }
 
 #tours .block-travel .block-excursion {
-  background: url(../img/img2.jpg) right;
+  background: url(../../img/home/img2.jpg) right;
 }
 
 #tours .block-travel .block-hotel {
-  background: url(../img/img1.jpg) right;
+  background: url(../../img/home/img1.jpg) right;
 }
 
 #tours .block-carousel .carousel-control-prev span {
@@ -883,7 +883,7 @@ body {
   margin-top: -30px;
   height: 70px;
   width: 45px;
-  background: url(../img/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
+  background: url(../../img/home/arrow_left.png) center center no-repeat rgba(255, 255, 255, 0.7);
   z-index: 23;
   left: 0;
   cursor: pointer;
@@ -902,7 +902,7 @@ body {
   margin-top: -30px;
   height: 70px;
   width: 45px;
-  background: url(../img/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
+  background: url(../../img/home/arrow_right.png) center center no-repeat rgba(255, 255, 255, 0.7);
   right: 0;
 }
 
@@ -942,7 +942,7 @@ body {
 
 @media (min-width: 300px) and (max-width: 768px) {
   #tours .btm-title {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 
@@ -1305,7 +1305,7 @@ body {
 .main_partners .partners_arrow_left {
   width: 12px;
   height: 21px;
-  background: url(../img/arrow_left_blue.png) top left no-repeat;
+  background: url(../../img/home/arrow_left_blue.png) top left no-repeat;
   top: 46%;
   margin-top: -10px;
   left: 20px;
@@ -1317,7 +1317,7 @@ body {
 .main_partners .partners_arrow_right {
   width: 12px;
   height: 21px;
-  background: url(../img/arrow_right_blue.png) top left no-repeat;
+  background: url(../../img/home/arrow_right_blue.png) top left no-repeat;
   top: 46%;
   margin-top: -10px;
   right: 20px;
@@ -1507,29 +1507,29 @@ body {
 }
 
 .header_search input[type=text].inp_from {
-  background: url(../img/plane.png) 12px 14px no-repeat #ffffff;
+  background: url(../../img/home/plane.png) 12px 14px no-repeat #ffffff;
   -webkit-border-radius: 5px 0px 0px 5px;
           border-radius: 5px 0px 0px 5px;
 }
 
 .header_search input[type=text].inp_where {
-  background: url(../img/place.png) 12px 14px no-repeat #ffffff;
+  background: url(../../img/home/place.png) 12px 14px no-repeat #ffffff;
 }
 
 .header_search input[type=text].inp_begin {
-  background: url(../img/cal.png) 12px 14px no-repeat #ffffff;
+  background: url(../../img/home/cal.png) 12px 14px no-repeat #ffffff;
 }
 
 .header_search input[type=text].inp_night {
-  background: url(../img/night.png) 12px 14px no-repeat #ffffff;
+  background: url(../../img/home/night.png) 12px 14px no-repeat #ffffff;
 }
 
 .header_search input[type=text].inp_kol {
-  background: url(../img/users.png) 12px 14px no-repeat #ffffff;
+  background: url(../../img/home/users.png) 12px 14px no-repeat #ffffff;
 }
 
 .header_search input[type=submit] {
-  background: url(../img/lupe.png) 12px 14px no-repeat #fac338;
+  background: url(../../img/home/lupe.png) 12px 14px no-repeat #fac338;
   width: 173px;
   text-align: left;
   height: 43px;
@@ -1561,7 +1561,7 @@ body {
 .main_slider_arrow_left {
   width: 12px;
   height: 21px;
-  background: url(../img/arrow_left-main.png) top left no-repeat;
+  background: url(../../img/home/arrow_left-main.png) top left no-repeat;
   position: absolute;
   z-index: 5;
   cursor: pointer;
@@ -1573,7 +1573,7 @@ body {
 .main_slider_arrow_right {
   width: 12px;
   height: 21px;
-  background: url(../img/arrow_right-main.png) top left no-repeat;
+  background: url(../../img/home/arrow_right-main.png) top left no-repeat;
   position: absolute;
   z-index: 5;
   cursor: pointer;
